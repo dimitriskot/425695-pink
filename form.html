@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="form-header">
+      <p class="form-header__logo-text">Pink</p>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a>Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru">Html academy</a>
+          </li>
+        </ul>
+      </nav>
+      <p class="form-header__text">Конкурс на самое безбашенное путешествие с Пинк</p>
+    </header>
+    <main class="container">
+      <form class="contest" action="https://echo.htmlacademy.ru" method="post">
+        <p class="contest__slogan">
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните
+        </p>
+        <fieldset class="contest__identify identify-list">
+          <p class="identify-list__item">
+            <label for="surname" class="contest__label">
+              Фамилия:
+            </label>
+            <input type="text" name="identify" id="surname" placeholder="Укажите фамилию *">
+          </p>
+          <p class="identify-list__item">
+            <label for="forename" class="contest__label">
+              Имя:
+            </label>
+            <input type="text" name="identify" id="forename" placeholder="Введите ваше имя *">
+          </p>
+          <p class="identify-list__item">
+            <label for="patronymic" class="contest__label">
+              Отчество:
+            </label>
+            <input type="text" name="identify" id="patronymic" placeholder="Ну и отчество тоже">
+          </p>
+        </fieldset>
+        <fieldset class="contest__achieving achieving-list">
+          <p class="contest__label">
+            Ваши безбашенные достижения в путешествии
+          </p>
+          <p class="achieving-list__item">
+            <input type="checkbox" name="achieving" id="shark" checked>
+            <label for="shark">
+              Сделал селфи с акулой
+            </label>
+          </p>
+          <p class="achieving-list__item">
+            <input type="checkbox" name="achieving" id="sunburned" checked>
+            <label for="sunburned">
+              Обгорел на пляже
+            </label>
+          </p>
+          <p class="achieving-list__item">
+            <input type="checkbox" name="achieving" id="norris">
+            <label for="norris">
+              Видел Чака Норриса
+            </label>
+          </p>
+          <p class="achieving-list__item">
+            <input type="checkbox" name="achieving" id="souvenirs">
+            <label for="souvenirs">
+              Накупил сувениров
+            </label>
+          </p>
+          <p class="achieving-list__item">
+            <input type="checkbox" name="achieving" id="tower" checked>
+            <label for="tower">
+              Удержал башню
+            </label>
+          </p>
+          <p class="achieving-list__item">
+            <input type="checkbox" name="achieving" id="mess">
+            <label for="mess">
+              Разгромил отель
+            </label>
+          </p>
+        </fieldset>
+        <fieldset class="contest__contacts contacts-list">
+          <p class="contacts-list__item">
+            <label for="phone" class="contest__label">
+              Номер телефона
+            </label>
+            <input type="text" name="contacts" id="phone" placeholder="Номер, пожалуйста">
+          </p>
+          <p class="contacts-list__item">
+            <label for="email" class="contest__label">
+              Адрес почты
+            </label>
+            <input type="text" name="contacts" id="email" placeholder="Введите почту *">
+          </p>
+        </fieldset>
+        <fieldset class="contest__application application-list">
+          <p class="contest__label">
+              С каким приложением путешествовали?
+          </p>
+          <p class="application-list__item">
+            <input type="radio" name="application" id="ios" checked>
+            <label for="ios">
+              Pink для iOS
+            </label>
+          </p>
+          <p class="application-list__item">
+            <input type="radio" name="application" id="android">
+            <label for="android">
+              Pink на Android
+            </label>
+          </p>
+          <p class="application-list__item">
+            <input type="radio" name="application" id="winphone">
+            <label for="winphone">
+              Pink на Android
+            </label>
+          </p>
+        </fieldset>
+        <fieldset class="contest__emotion">
+          <label for="emotion" class="contest__label">
+            Опишите свои эмоции
+          </label>
+          <textarea name="emotion" id="emotion" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях
+          </textarea>
+        </fieldset>
+        <button class="contest__button">Отправить форму</button>
+        <p class="contest__footnote">
+          <sup><span class="contest__label">*</span></sup> — обязательные поля
+        </p>
+      </form>
+    </main>
+    <footer class="footer">
+      <img src="http://placehold.it/147x40" alt="Pink-logo">
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--Twitter" href="#">Twitter</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--Facebook" href="#">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--YouTube" href="#">YouTube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-copyright copyright">
+        <p class="copyright__text">
+          Разработано
+        </p>
+        <img src="http://placehold.it/27x34" alt="HA-logo">
+      </div>
+    </footer>
+  </body>
+</html>
