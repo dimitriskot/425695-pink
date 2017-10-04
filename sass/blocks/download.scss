@@ -1,0 +1,44 @@
+.download {
+  height: 271px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #1d2631;
+}
+
+.download__box {
+  width: 205px;
+  margin-bottom: 24px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.download__platform {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+}
+
+.download__platform--android {
+  margin-top: 8px;
+}
+
+.download__platform--microsoft {
+  margin-top: 12px;
+}
+
+.download_text {
+  width: 280px;
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 100;
+  color: #ffffff;
+  text-align: center;
+}

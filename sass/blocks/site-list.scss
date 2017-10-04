@@ -1,0 +1,27 @@
+.site-list__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.site-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 62px;
+  margin-bottom: 1px;
+
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: #283645;
+
+  border-top: 1px solid #485461;
+
+  box-shadow: 0 1px 0 0 #000000;
+}

@@ -1,0 +1,54 @@
+.button {
+  display: block;
+
+  width: 274px;
+  margin-top: 28px;
+  margin-bottom: 32px;
+  padding-top: 14px;
+  padding-bottom: 17px;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+
+  background-color: transparent;
+
+  border: 3px solid #ffffff;
+  border-radius: 25px;
+}
+
+.button__download {
+  text-decoration: none;
+}
+
+.button__post {
+  color: #d22856;
+
+  border-color: #d22856;
+}
+
+
+.button__cancel {
+  color: rgba(40, 54, 69, 0.1);
+
+  border-color: rgba(40, 54, 69, 0.1);
+}
+
+.button__send {
+  width: 276px;
+  height: 59px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #2aab6d;
+
+  border: 2px solid #2aab6d;
+  border-radius: 1px;
+}
