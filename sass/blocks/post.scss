@@ -1,0 +1,26 @@
+.post {
+  background-color: #f2f2f2;
+}
+
+.post__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .post__wrapper {
+    width: 620px;
+
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .post__wrapper {
+    width: 940px;
+  }
+}

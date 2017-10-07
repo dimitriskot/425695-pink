@@ -1,0 +1,41 @@
+.effect {
+  display: none;
+}
+
+.effect__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  display: flex;
+}
+
+.effect__title {
+  margin: 0;
+  padding: 0;
+
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .effect {
+    width: auto;
+
+    display: block;
+  }
+
+  .effect__wrapper {
+    width: 620px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect {
+    background-color: #f2f2f2;
+  }
+
+  .effect__wrapper {
+    width: 940px;
+  }
+}
