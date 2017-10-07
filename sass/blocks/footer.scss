@@ -1,7 +1,46 @@
+.footer--index {
+  display: none;
+}
+
+.footer__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social__list {
+  width: 177px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer__text {
   margin: 0;
   padding: 0;
 
   font-size: 14px;
   line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer--index {
+    display: block;
+  }
+
+  .footer__wrapper {
+    width: 620px;
+
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__wrapper {
+    width: 940px;
+  }
 }

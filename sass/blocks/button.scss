@@ -30,7 +30,6 @@
   border-color: #d22856;
 }
 
-
 .button__cancel {
   color: rgba(40, 54, 69, 0.1);
 
@@ -51,4 +50,18 @@
 
   border: 2px solid #2aab6d;
   border-radius: 1px;
+}
+
+@media (min-width: $tablet-width) {
+  .button__post,
+  .button__cancel {
+    width: 260px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button__post,
+  .button__cancel {
+    width: 183px;
+  }
 }

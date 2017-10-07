@@ -25,3 +25,20 @@
 
   box-shadow: 0 1px 0 0 #000000;
 }
+
+@media (min-width: $desktop-width) {
+  .site-list__item {
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: normal;
+    text-transform: capitalize;
+
+    background-color: transparent;
+
+    border: none;
+
+    box-shadow: none;
+  }
+}

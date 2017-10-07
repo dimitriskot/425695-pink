@@ -2,6 +2,23 @@
   background-color: #ffffff;
 }
 
+.feedback__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feedbck__text-box {
+  width: auto;
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 .feedback__ask {
   margin: 0;
   padding: 0;
@@ -10,6 +27,7 @@
 }
 
 .feedback__text {
+  width: 280px;
   margin: 0;
   padding: 0;
 
@@ -22,4 +40,36 @@
   font-size: 24px;
   font-weight: normal;
   color: #d22856;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__ask {
+    font-size: 40px;
+  }
+
+  .feedback__wrapper {
+    width: 620px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__wrapper {
+    width: 940px;
+  }
+
+  .feedback__ask {
+    font-size: 50px;
+  }
+
+  .feedback__contacts--phone {
+    order: 1;
+  }
+
+  .feedback__contacts--mail {
+    order: 3;
+  }
+
+  .feedback__contacts--adress {
+    order: 2;
+  }
 }

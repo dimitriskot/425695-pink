@@ -2,23 +2,25 @@
   background-color: #f2f2f2;
 }
 
-.download__link {
-  display: block;
+.post__wrapper {
+  width: 280px;
+  margin: 0 auto;
 
-  width: 274px;
-  margin-top: 28px;
-  margin-bottom: 32px;
-  padding-top: 14px;
-  padding-bottom: 17px;
+  display: flex;
+  flex-direction: column;
+}
 
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: bold;
-  color: #ffffff;
-  text-align: center;
-  text-decoration: none;
+@media (min-width: $tablet-width) {
+  .post__wrapper {
+    width: 620px;
 
-  border: 3px solid #ffffff;
-  border-radius: 25px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .post__wrapper {
+    width: 940px;
+  }
 }
