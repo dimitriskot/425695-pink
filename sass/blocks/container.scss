@@ -1,0 +1,31 @@
+.container {
+  width: 320px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: auto;
+    margin: 0;
+  }
+/*
+  .container__wrapper {
+    width: 620px;
+    margin: 0 auto;
+  }*/
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: auto;
+    margin: 0;
+  }
+/*
+  .container__wrapper {
+    width: 940px;
+    margin: 0 auto;
+  }*/
+}

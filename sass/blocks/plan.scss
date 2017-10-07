@@ -1,0 +1,41 @@
+.plan {
+  background-color: #f2f2f2;
+}
+
+.plan__card {
+  background-color: #ffffff;
+}
+
+.plan__title {
+  margin: 0;
+  padding: 0;
+
+  display: block;
+
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #283645;
+}
+
+.plan__name {
+  font-size: 18px;
+}
+
+.plan__price {
+  font-size: 24px;
+}
+
+.options-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.options-list__item {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
