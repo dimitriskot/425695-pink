@@ -1,25 +1,46 @@
 .features {
   background-color: #f2f2f2;
+  background-image: url(../img/bg-triangle-white.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
 }
 
-.features__wrapper {
-  width: 280px;
-  margin: 0 auto;
+.features__slogan {
+  width: 100%;
+  padding-top: 11px;
+  padding-bottom: 32px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .features__ask {
   margin: 0;
+  margin-top: 29px;
   padding: 0;
 
   font-size: 24px;
+  line-height: 29px;
+  font-weight: lighter;
+  text-align: center;
+}
 
-  background-color: #ffffff;
+.features__box {
+  width: 100%;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .features__list {
-  width: 310px;
+  width: 100%;
   margin: 0;
   padding: 0;
+  padding-top: 83px;
+  padding-bottom: 10px;
 
   display: flex;
   flex-direction: column;
@@ -27,18 +48,18 @@
   list-style: none;
 }
 
-.features__image-box {
-  display: flex;
-  justify-content: space-around;
-}
+.features__item {
+  width: 100%;
+  margin-bottom: 31px;
 
-.features__image-grey,
-.features__image-pink {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .features__title {
   margin: 0;
+  margin-bottom: 11px;
   padding: 0;
 
   font-size: 18px;
@@ -52,56 +73,111 @@
 
   font-size: 14px;
   line-height: 24px;
+  font-weight: lighter;
+  text-align: center;
 }
 
-.features__list-wrapper {
-  width: auto;
-
+.features__image-box {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+}
+
+.features__image-crop {
+  position: relative;
+
+  width: 157px;
+  height: 277px;
+  display: flex;
+
+  overflow: hidden;
+}
+
+.features__image {
+  position: absolute;
+}
+
+.features__image-grey,
+.features__image-pink {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
-  .features__wrapper {
-    width: 620px;
+  .features__slogan {
+    padding-top: 21px;
+    padding-bottom: 49px;
   }
 
   .features__ask {
     font-size: 40px;
+    line-height: 47px;
   }
 
-  .features__list-wrapper {
-    width: auto;
+  .features__ask:last-child {
+    width: 340px;
+    margin-top: 2px;
+  }
 
+  .features__box {
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+
+  .features__list {
+    width: 310px;
+    padding-top: 73px;
+    padding-bottom: 10px;
+  }
+
+  .features__item {
+    margin-bottom: 35px;
+
+    align-items: flex-start;
+  }
+
+  .features__text {
+    text-align: left;
+  }
+
+  .features__image-crop {
+    width: 268px;
+    height: 482px;
   }
 
   .features__image {
     width: 268px;
     height: 547px;
   }
-
-  .features__list {
-    width: 310px;
-  }
-
 }
 
 @media (min-width: $desktop-width) {
-  .features__wrapper {
-    width: 940px;
+  .features__slogan {
+    padding-top: 40px;
+    padding-bottom: 76px;
   }
 
   .features__ask {
     font-size: 50px;
+    line-height: 59px;
   }
 
-  .features__list-wrapper {
-    width: auto;
+  .features__ask:last-child {
+    width: 430px;
+    margin-top: 0;
+  }
 
+  .features__box {
     flex-direction: column-reverse;
-    justify-content: space-around;
+  }
+
+  .features__image-box {
+    width: 100%;
+
+    justify-content: space-between;
+  }
+
+  .features__image-crop {
+    width: 186px;
+    height: 301px;
   }
 
   .features__image {
@@ -114,10 +190,44 @@
     display: block;
   }
 
+  .features__image-grey {
+    margin-left: 54px;
+  }
+
+  .features__image-smile {
+    margin-right: 57px;
+  }
+
   .features__list {
-    width: auto;
+    width: 100%;
+    padding-top: 57px;
 
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+  }
+
+  .features__item {
+    width: 235px;
+    margin-bottom: 35px;
+
+    align-items: center;
+  }
+
+  .features__item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .features__title {
+    margin-bottom: 23px;
+
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .features__text {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
   }
 }

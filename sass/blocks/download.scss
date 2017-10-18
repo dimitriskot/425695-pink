@@ -1,16 +1,16 @@
 .download {
-  margin-top: 396px;
-
+  position: absolute;
+  bottom: -270px;
+  width: 100%;
   background-color: #1d2631;
-}
-
-.download__wrapper {
-  display: flex;
-  justify-content: center;
 }
 
 .download__box {
   width: 280px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .download__title {
@@ -18,24 +18,54 @@
   padding: 0;
 
   font-size: 0;
-  font-weight: normal;
+  font-weight: lighter;
+  text-align: center;
   color: #ffffff;
+}
+
+.download__sprite {
+  width: auto;
+  margin-bottom: 22px;
+
+  display: flex;
+}
+
+.download__platform {
+  width: auto;
+
+  display: flex;
+}
+
+.download__platform--apple {
+  margin-right: 34px;
+}
+
+.download__platform--android {
+  margin-top: 8px;
+  margin-right: 37px;
+}
+
+.download__platform--microsoft {
+  margin-top: 12px;
 }
 
 .download_text {
   margin: 0;
+  margin-bottom: 29px;
   padding: 0;
 
   font-size: 14px;
   line-height: 24px;
-  font-weight: 100;
+  font-weight: lighter;
   color: #ffffff;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .download {
-    width: auto;
+    left: 20px;
+    bottom: 111px;
+    width: 300px;
     margin: 0;
 
     display: flex;
@@ -43,32 +73,86 @@
     background-color: transparent;
   }
 
-  .download__wrapper {
-    width: 620px;
-    margin: 0 auto;
-
-    justify-content: flex-start;
-  }
-
   .download__box {
-    width: 300px;
+    width: 100%;
   }
 
   .download__title {
+    width: 220px;
+
     font-size: 40px;
+    line-height: 48px;
+  }
+
+  .download__platform--apple {
+    margin-right: 36px;
+  }
+
+  .download__platform--android {
+    margin-top: 6px;
+    margin-right: 37px;
+  }
+
+  .download__platform--microsoft {
+    margin-top: 12px;
+  }
+
+  .download__sprite {
+    margin-bottom: 36px;
+  }
+
+  .download_text {
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .download {
-    width: auto;
+    left: 130px;
+    bottom: 122px;
+    width: 300px;
     margin: 0;
+
+    display: flex;
+
+    background-color: transparent;
   }
 
-  .download__wrapper {
-    width: 940px;
-    margin: 0 auto;
+  .download__box {
+    width: 100%;
+  }
 
-    justify-content: flex-start;
+  .download__title {
+    width: 250px;
+
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .download__platform--apple {
+    margin-right: 34px;
+  }
+
+  .download__platform--android {
+    margin-top: 7px;
+    margin-right: 37px;
+  }
+
+  .download__platform--microsoft {
+    margin-top: 12px;
+  }
+
+  .download__sprite {
+    margin-bottom: 54px;
+  }
+
+  .download_text {
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 24px;
   }
 }

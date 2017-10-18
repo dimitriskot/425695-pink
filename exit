@@ -1,0 +1,30 @@
+*   da8c024 2017-10-07 | Merge branch 'dimitriskot-module4-task1' (HEAD -> module5-task1, origin/master, origin/HEAD, academy/master, master) [Alexander Polovnikov]
+[31m|[m[32m\[m  
+[31m|[m *   34f9556 2017-10-07 | Merge branch 'module4-task1' of git://github.com/dimitriskot/425695-pink into dimitriskot-module4-task1 [Alexander Polovnikov]
+[31m|[m [31m|[m[34m\[m  
+[31m|[m[31m/[m [34m/[m  
+[31m|[m * 56b42f3 2017-10-07 | Done addaptive fix (origin/module4-task1, module4-task1) [dimitriskot]
+[31m|[m [34m|[m *   50a18fa 2017-10-07 | Merge branch 'master' of github.com:htmlacademy-adaptive/425695-pink into module3-task1 (module3-task1) [dimitriskot]
+[31m|[m [34m|[m [34m|[m[31m\[m  
+[31m|[m [34m|[m[34m/[m [31m/[m  
+[31m|[m [34m|[m [31m/[m   
+[31m|[m [34m|[m[31m/[m    
+[31m|[m[31m/[m[34m|[m     
+* [34m|[m   0af418e 2017-09-28 | Merge pull request #2 from dimitriskot/module2-task1 [Keks]
+[1;31m|[m[1;32m\[m [34m\[m  
+[1;31m|[m [1;32m|[m * 8d1b43d 2017-10-04 | Done styles with sass (origin/module3-task1) [dimitriskot]
+[1;31m|[m [1;32m|[m *   9b39877 2017-09-27 | Merge branch 'module2-task1' [dimitriskot]
+[1;31m|[m [1;32m|[m [1;31m|[m[1;32m\[m  
+[1;31m|[m [1;32m|[m[1;31m/[m [1;32m/[m  
+[1;31m|[m[1;31m/[m[1;32m|[m [1;32m/[m   
+[1;31m|[m [1;32m|[m[1;32m/[m    
+[1;31m|[m * cfae6e1 2017-09-23 | Done marckup mobile-version of Pink (origin/module2-task1) [dimitriskot]
+* [1;34m|[m 19a28dc 2017-09-26 | :kissing_cat: Добавляет сборку Sass в Gulp [Keks]
+* [1;34m|[m 1aa88c9 2017-09-26 | :gift: Нарезает графику для вёрстки [Keks]
+* [1;34m|[m   9670a88 2017-09-23 | Merge pull request #1 from dimitriskot/module1-task1 [Keks]
+[1;34m|[m[1;36m\[m [1;34m\[m  
+[1;34m|[m [1;36m|[m[1;34m/[m  
+[1;34m|[m[1;34m/[m[1;36m|[m   
+[1;34m|[m * f3a31d2 2017-09-19 | Добавил наставника (origin/module1-task1) [dimitriskot]
+[1;34m|[m[1;34m/[m  
+* 639f918 2017-09-19 | :hatching_chick: [Keks]

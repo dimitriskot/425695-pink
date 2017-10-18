@@ -4,28 +4,31 @@
 
   display: flex;
   flex-direction: column;
+
+  background-color: #ffffff;
+}
+
+.container__wrapper {
+  width: 280px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .container {
-    width: auto;
-    margin: 0;
+    width: 660px;
   }
-/*
+
   .container__wrapper {
     width: 620px;
-    margin: 0 auto;
-  }*/
+  }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    width: auto;
-    margin: 0;
+    width: 1200px;
   }
-/*
+
   .container__wrapper {
     width: 940px;
-    margin: 0 auto;
-  }*/
+  }
 }

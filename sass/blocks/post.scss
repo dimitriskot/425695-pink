@@ -1,26 +1,288 @@
 .post {
+  width: 320px;
+  margin: 0 auto;
+
   background-color: #f2f2f2;
 }
 
-.post__wrapper {
-  width: 280px;
-  margin: 0 auto;
+.post__box {
+  width: 100%;
 
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.post__image-box {
+  width: 280px;
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post__editor {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /*border-bottom: 1px solid rgba(0, 0, 0, 0.1);*/
+}
+
+.post__editor-box {
+  width: 100%;
+  margin-top: 41px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.post__tools-box {
+  width: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post__crop {
+  margin-left: 36px;
+  margin-right: 34px;
+}
+
+.post__fill {
+  margin-right: 40px;
+}
+
+.post__scale-box {
+  position: relative;
+  width: 240px;
+  margin-top: 39px;
+  margin-bottom: 34px;
+}
+
+.post__scale--crop,
+.post__scale--fill,
+.post__scale--contrast {
+  display: none;
+}
+
+.post__scale {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+
+.post__toggle {
+  position: absolute;
+  top: -6px;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.post__toggle--general {
+  left: 80%;
+}
+
+.post__toggle:active {
+  background-color: #d22856;
+}
+
+.post__buttons {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (min-width: $tablet-width) {
-  .post__wrapper {
-    width: 620px;
+  .post {
+    width: 660px;
+  }
+
+  .post__box {
+    padding-top: 57px;
+    padding-bottom: 53px;
 
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .post__image {
+    width: 300px;
+    height: 400px;
+  }
+
+  .post__image-box {
+    width: 300px;
+    margin: 0;
+  }
+
+  .post__editor {
+    width: 273px;
+    border-bottom: none;
+  }
+
+  .post__editor-box {
+    margin: 0;
+
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .post__tools-box {
+    width: 100%;
+    margin: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .post__tools {
+    fill: #d22856;
+  }
+
+  .post__tools--crop {
+    width: 22px;
+    height: 22px;
+    margin-top: 9px;
+    margin-left: 1px;
+    margin-bottom: 24px;
+  }
+
+  .post__tools--fill {
+    width: 24px;
+    height: 22px;
+    margin-top: 27px;
+    margin-left: 1px;
+    margin-bottom: 23px;
+  }
+
+  .post__tools--contrast {
+    width: 16px;
+    height: 16px;
+    margin-top: 26px;
+    margin-left: 6px;
+    margin-bottom: 27px;
+  }
+
+  .post__scale--general {
+    display: none;
+  }
+
+  .post__scale-box {
+    width: 202px;
+    margin: 0;
+    margin-right: 18px;
+  }
+
+  .post__scale--crop,
+  .post__scale--fill,
+  .post__scale--contrast {
+    display: block;
+  }
+
+  .post__scale--crop {
+    margin-top: 19px;
+  }
+
+  .post__scale--fill {
+    margin-top: 36px;
+  }
+
+  .post__scale--contrast {
+    margin-top: 33px;
+  }
+
+  .post__toggle--crop {
+    left: 72.5%;
+  }
+
+  .post__toggle--fill {
+    left: 12.5%;
+  }
+
+  .post__toggle--contrast {
+    left: 47.8%;
+  }
+
+  .post__buttons {
+    align-items: flex-start;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .post__wrapper {
+  .post {
     width: 940px;
+    margin-bottom: 32px;
+  }
+
+  .post__image-box {
+    margin-left: 80px;
+  }
+
+  .post__editor {
+    width: 410px;
+    margin-right: 60px;
+  }
+
+  .post__tools--crop {
+    width: 44px;
+    height: 44px;
+    margin-top: -2px;
+    margin-left: 0;
+    margin-bottom: 13px;
+  }
+
+  .post__tools--fill {
+    width: 48px;
+    height: 43px;
+    margin-top: 15px;
+    margin-left: 0;
+    margin-bottom: 14px;
+  }
+
+  .post__tools--contrast {
+    width: 32px;
+    height: 32px;
+    margin-top: 18px;
+    margin-left: 6px;
+    margin-bottom: 19px;
+  }
+
+  .post__scale-box {
+    width: 288px;
+    margin-right: 30px;
+  }
+
+  .post__toggle--crop {
+    left: 24.8%;
+  }
+
+  .post__toggle--fill {
+    left: 86%;
+  }
+
+  .post__toggle--contrast {
+    left: 55.8%;
+  }
+
+  .post__buttons {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 }

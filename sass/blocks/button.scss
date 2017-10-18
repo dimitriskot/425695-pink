@@ -2,8 +2,6 @@
   display: block;
 
   width: 274px;
-  margin-top: 28px;
-  margin-bottom: 32px;
   padding-top: 14px;
   padding-bottom: 17px;
 
@@ -21,24 +19,33 @@
 }
 
 .button__download {
+  margin-top: 28px;
+  margin-bottom: 32px;
+
   text-decoration: none;
 }
 
 .button__post {
+  margin-top: 38px;
+  margin-bottom: 12px;
+
   color: #d22856;
 
   border-color: #d22856;
 }
 
 .button__cancel {
+  margin: 0;
+  margin-bottom: 41px;
   color: rgba(40, 54, 69, 0.1);
 
   border-color: rgba(40, 54, 69, 0.1);
 }
 
 .button__send {
-  width: 276px;
-  height: 59px;
+  width: 280px;
+  height: 63px;
+  margin-bottom: 31px;
 
   font-size: 18px;
   line-height: 30px;
@@ -53,15 +60,41 @@
 }
 
 @media (min-width: $tablet-width) {
+  .button__download {
+    width: 294px;
+    margin-top: 31px;
+    margin-bottom: 46px;
+  }
+
   .button__post,
   .button__cancel {
-    width: 260px;
+    margin: 0;
+    width: 254px;
+  }
+
+  .button__post {
+    margin-top: 67px;
+    margin-bottom: 24px;
+  }
+
+  .button__send {
+    width: 300px;
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .button__download {
+    margin-top: 52px;
+    margin-bottom: 68px;
+
+    font-size: 21px;
+  }
+
   .button__post,
   .button__cancel {
     width: 183px;
+    margin: 0;
+    margin-top: 146px;
   }
 }
