@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/outline.css">
+  <base href="https://htmlacademy-adaptive.github.io/425695-pink/5/">
+</head>
+
+<body class="page">
+  <header class="page-header page-header--inner">
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
+        <div class="page-header__box-wrapper">
+          <div class="page-header__box">
+            <img src="img/logo-pink-white-mobile.svg" class="page-header__logo" alt="Pink" width="75" height="22">
+            <button class="main-nav__toggle main-nav__toggle--close main-nav__toggle--open" type="button">Закрыть меню</button>
+          </div>
+        </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html" class="site-list__link">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html" class="site-list__link">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru" class="site-list__link">HTML academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <p class="page-header__text page-header__text--form">Конкурс на самое безбашенное путешествие с Пинк</p>
+  </header>
+  <main class="container">
+    <div class="form__slogan">
+      <p class="form__ask">
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span>
+      </p>
+    </div>
+    <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="form__wrapper form__wrapper--id">
+        <fieldset class="form__fieldset form__fieldset--id">
+          <div class="container__wrapper form__fieldset--id-wrapper">
+            <div class="form__box form__box--id">
+              <div class="form__item form__item--id">
+                <label for="surname" class="form__label form__label--id">
+                  Фамилия:
+                </label>
+                <input class="form__input" type="text" name="identify" id="surname" placeholder="Укажите фамилию *">
+              </div>
+              <div class="form__item form__item--id">
+                <label for="forename" class="form__label form__label--id">
+                  Имя:
+                </label>
+                <input class="form__input" type="text" name="identify" id="forename" placeholder="Введите ваше имя *">
+              </div>
+              <div class="form__item form__item--id">
+                <label for="patronymic" class="form__label form__label--id">
+                  Отчество:
+                </label>
+                <input class="form__input" type="text" name="identify" id="patronymic" placeholder="Ну и отчество тоже">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <div class="form__wrapper form__wrapper--achieving">
+        <fieldset class="form__fieldset form__fieldset--achieving">
+          <legend class="form__label form__label--legend">
+            Ваши безбашенные достижения в путешествии
+          </legend>
+          <div class="container__wrapper">
+            <div class="form__box form__box--achieving">
+              <div class="form__item form__item--achieving">
+                <label class="form__text" for="shark">
+                  <input type="checkbox" name="achieving" id="shark" checked>
+                  <span class="form__checkbox"></span>
+                  Сделал селфи с акулой
+                </label>
+              </div>
+              <div class="form__item form__item--achieving">
+                <input type="checkbox" name="achieving" id="sunburned" checked>
+                <label class="form__text" for="sunburned">
+                  Обгорел на пляже
+                </label>
+              </div>
+              <div class="form__item form__item--achieving">
+                <input type="checkbox" name="achieving" id="norris">
+                <label class="form__text" for="norris">
+                  Видел Чака Норриса
+                </label>
+              </div>
+              <div class="form__item form__item--achieving">
+                <input type="checkbox" name="achieving" id="souvenirs">
+                <label class="form__text" for="souvenirs">
+                  Накупил сувениров
+                </label>
+              </div>
+              <div class="form__item form__item--achieving">
+                <input type="checkbox" name="achieving" id="tower" checked>
+                <label class="form__text" for="tower">
+                  Удержал башню
+                </label>
+              </div>
+              <div class="form__item form__item--achieving">
+                <input type="checkbox" name="achieving" id="mess">
+                <label class="form__text" for="mess">
+                  Разгромил отель
+                </label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <div class="form__wrapper form__wrapper--contacts">
+        <fieldset class="form__fieldset form__fieldset--contacts">
+          <legend class="form__label form__label--legend form__legend--contacts">
+            Контактная информация
+          </legend>
+          <div class="container__wrapper">
+            <div class="form__box form__box--contacts">
+              <div class="form__item form__item--contacts">
+                <label for="phone" class="form__label form__label--contacts">
+                  Номер телефона
+                </label>
+                <input class="form__input" type="text" name="contacts" id="phone" placeholder="Номер, пожалуйста">
+              </div>
+              <div class="form__item form__item--contacts">
+                <label for="email" class="form__label form__label--contacts">
+                  Адрес почты
+                </label>
+                <input class="form__input" type="text" name="contacts" id="email" placeholder="Введите почту *">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <div class="form__wrapper form__wrapper--application">
+        <fieldset class="form__fieldset form__fieldset--application">
+          <legend class="form__label form__label--legend">
+            С каким приложением путешествовали?
+          </legend>
+          <div class="container__wrapper form__fieldset--application-wrapper">
+            <div class="form__box form__box--application">
+              <div class="form__item form__item--application">
+                <input type="radio" name="application" id="ios" checked>
+                <label class="form__text" for="ios">
+                  Pink для iOS
+                </label>
+              </div>
+              <div class="form__item form__item--application">
+                <input type="radio" name="application" id="android">
+                <label class="form__text" for="android">
+                  Pink на Android
+                </label>
+              </div>
+              <div class="form__item form__item--application">
+                <input type="radio" name="application" id="winphone">
+                <label class="form__text" for="winphone">
+                  Windows Phone
+                </label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <div class="form__wrapper form__wrapper--emotion">
+        <fieldset class="form__fieldset form__fieldset--emotion">
+          <legend class="form__label form__label--legend">
+            Опишите свои эмоции
+          </legend>
+          <div class="container__wrapper">
+            <div class="form__box">
+              <textarea class="form__describe" name="emotion" id="emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <div class="form__footer">
+        <button class="button__send">Отправить форму</button>
+        <p class="form__footnote">
+          <sup>
+            <span class="form__label">*</span>
+          </sup> — обязательные<span class="form__footnote-text"> для заолнения</span> поля
+        </p>
+      </div>
+    </form>
+  </main>
+  <footer class="footer">
+    <div class="container__wrapper">
+      <div class="footer__box">
+        <svg class="footer__logo" width="147" height="40">
+          <use xlink:href="img/sprite.svg#footer-pink"></use>
+        </svg>
+        <div class="footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--Twitter" href="#">
+                <svg class="footer__twitter" width="18" height="15" fill="#d22856">
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--Facebook" href="#">
+                <svg class="footer__facebook" width="9" height="18" fill="#d22856">
+                  <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--YouTube" href="#">
+                <svg class="footer__youtube" width="15" height="13" fill="#d22856">
+                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copyright">
+          <p class="footer__text">
+            Разработано
+          </p>
+          <a class="footer__academy-link" href="#">
+            <svg class="footer__academy-icon" width="27" height="34" fill="#d22856">
+              <use xlink:href="img/sprite.svg#footer-academy"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
