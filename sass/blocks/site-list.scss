@@ -4,6 +4,8 @@
 }
 
 .site-list__item {
+  width: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,15 +21,15 @@
   text-align: center;
   vertical-align: middle;
 
-  background-color: #283645;
-
   border-top: 1px solid #485461;
 
-  box-shadow: 0 1px 0 0 #000000;
+  box-shadow: 0 1px 0 0 #000000,
+              0 -1px 0 0 #000000;
 }
 
 @media (min-width: $desktop-width) {
   .site-list__item {
+    width: auto;
     margin: 0;
 
     font-size: 18px;
@@ -35,10 +37,12 @@
     font-weight: normal;
     text-transform: capitalize;
 
-    background-color: transparent;
-
     border: none;
 
     box-shadow: none;
+  }
+
+  .site-list__item:not(:last-child) {
+    margin-right: 85px;
   }
 }

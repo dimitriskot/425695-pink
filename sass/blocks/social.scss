@@ -1,12 +1,25 @@
 .social__list {
+  width: 177px;
   margin: 0;
   padding: 0;
+
+  display: flex;
+  justify-content: space-between;
 
   list-style: none;
 }
 
-.social__item {
+.social__link {
+  width: 45px;
+  height: 45px;
   margin: 0;
   padding: 0;
-}
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #ffffff;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50%;
+}

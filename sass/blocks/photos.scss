@@ -1,9 +1,14 @@
 .photos {
+  width: 320px;
+  margin: 0 auto;
+
   background-color: #ffffff;
+
+  overflow: hidden;
 }
 
-.photos__wrapper {
-  width: 280px;
+.photos__box {
+  width: 100%;
   margin: 0 auto;
 
   display: flex;
@@ -12,7 +17,10 @@
 }
 
 .photos__ask {
-  margin: 0;
+  width: 240px;
+  margin: 0 auto;
+  margin-top: 46px;
+  margin-bottom: 48px;
   padding: 0;
 
   font-size: 14px;
@@ -20,25 +28,84 @@
   text-align: center;
 }
 
+.photos__ask--bottom {
+  margin-top: 23px;
+  margin-bottom: 43px;
+}
+
 .photos__item,
 .photos__item--top {
+  position: relative;
+
   width: 280px;
+  margin-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
 
   background-color: #f2f2f2;
 }
 
-.photos__image--top {
+.photos__item--top::before {
+  content: "Панорама дня";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 140px;
+  height: 36px;
+
   display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: #d22856;
+}
+
+.photos__image--top {
+  width: 320px;
+
+  display: flex;
+  align-self: center;
+}
+
+.photos__post,
+.photos__post--top {
+  width: 262px;
+  margin-top: 17px;
+  margin-left: 18px;
+  margin-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .photos__text {
+  width: 240px;
+  margin: 0;
+  padding: 0;
+
   font-size: 14px;
   line-height: 24px;
 }
 
 .photos__text--author {
+  margin-bottom: 0;
+
   font-weight: bold;
   font-style: normal;
+}
+
+.photos__text--comment {
+  margin-bottom: 10px;
 }
 
 .photos__text--time {
@@ -47,7 +114,19 @@
   text-transform: uppercase;
 }
 
+.photos__like,
+.photos__like--top {
+  width: 240px;
+
+  display: flex;
+  align-items: center;
+}
+
 .photos__like-count {
+  margin: 0;
+  margin-left: 19px;
+  padding: 0;
+
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
@@ -55,23 +134,143 @@
 }
 
 @media (min-width: $tablet-width) {
-  .photos__wrapper,
-  .photos__item--top {
-    width: 620px;
+  .photos {
+    width: 660px;
   }
 
   .photos__ask {
+    width: 450px;
+    margin-top: 92px;
+    margin-bottom: 76px;
+
     font-size: 18px;
+  }
+
+  .photos__item--top {
+    width: 620px;
+    margin-bottom: 50px;
+  }
+
+  .photos__image--top img {
+    width: 700px;
+    height: 509px;
+  }
+
+  .photos__image--top {
+    width: 700px;
+  }
+
+  .photos__item--top::before {
+    top: 57px;
+  }
+
+  .photos__post--top {
+    width: 564px;
+    margin-top: 24px;
+    margin-left: 28px;
+    margin-bottom: 14px;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .photos__post--top .photos__text--author {
+    order: 1;
+  }
+
+  .photos__post--top .photos__text--comment {
+    width: 564px;
+
+    order: 3;
+  }
+
+  .photos__post {
+    min-height: 109px;
+    margin-top: 23px;
+    margin-left: 27px;
+    margin-bottom: 23px;
+  }
+
+  .photos__like-count {
+    margin: 0;
+  }
+
+  .photos__like--top {
+    width: 118px;
+    margin: 0;
+
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    order: 2;
+  }
+
+  .photos__like {
+    margin-top: auto;
+
+    flex-direction: row-reverse;
+    justify-content: space-between;
   }
 
   .photos__item {
     width: 300px;
   }
+
+  .photos__item img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .photos__ask--bottom {
+    margin-top: 45px;
+    margin-bottom: 69px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .photos__wrapper,
+  .photos {
+    width: 940px;
+
+    overflow: visible;
+  }
+
   .photos__item--top {
     width: 940px;
+  }
+
+  .photos__ask {
+    width: 580px;
+    margin-bottom: 88px;
+  }
+
+  .photos__image--top img {
+    width: 1200px;
+    height: 506px;
+  }
+
+  .photos__image--top {
+    width: 1200px;
+  }
+
+  .photos__post--top {
+    width: 880px;
+  }
+
+  .photos__post--top .photos__text--comment {
+    width: 870px;
+  }
+
+  .photos__item {
+    margin-bottom: 54px;
+  }
+
+  .photos__item img {
+    height: 400px;
+  }
+
+  .photos__ask--bottom {
+    margin-top: 5px;
+    margin-bottom: 66px;
   }
 }
