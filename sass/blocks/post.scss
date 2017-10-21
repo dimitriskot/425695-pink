@@ -227,7 +227,11 @@
 @media (min-width: $desktop-width) {
   .post {
     width: 940px;
-    margin-bottom: 32px;
+    margin-bottom: 29px;
+  }
+
+  .post__box {
+    padding-bottom: 56px;
   }
 
   .post__image-box {

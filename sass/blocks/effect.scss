@@ -11,18 +11,15 @@
 
   .effect__box {
     width: 100%;
+    margin-top: 59px;
 
     display: flex;
     justify-content: space-between;
   }
 
-  .effect__image {
-    margin-top: 59px;
-  }
-
   .effect__text-box {
     width: 310px;
-    margin-top: 95px;
+    margin-top: 36px;
 
     display: flex;
     flex-direction: column;
@@ -64,6 +61,7 @@
   }
 
   .effect__box {
+    margin-top: 0;
     padding-bottom: 68px;
 
     justify-content: flex-start;
@@ -72,13 +70,13 @@
   .effect__image {
     width: 298px;
     height: 345px;
-    margin-top: 20px;
+    margin-top: 22px;
     margin-right: 68px;
   }
 
   .effect__text-box {
     width: 530px;
-    margin-top: 115px;
+    margin-top: 117px;
   }
 
   .effect__title br {

@@ -21,18 +21,19 @@
   padding-bottom: 0;
 
   background: url(../img/bg-back-mobile@1x.jpg) no-repeat center bottom;
+  background-origin: border-box;
 }
 
 .page-header__box-wrapper {
   width: 280px;
   height: 69px;
   margin: 0 auto;
+  margin-bottom: 1px;
 }
 
 .page-header__box {
   width: 100%;
   margin-top: 22px;
-  margin-bottom: 1px;
 
   display: flex;
   justify-content: space-between;
@@ -125,7 +126,7 @@
   }
 
   .page-header__text {
-    margin-top: 63px;
+    margin-top: 65px;
     margin-bottom: 100px;
   }
 
