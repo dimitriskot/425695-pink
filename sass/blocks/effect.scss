@@ -11,10 +11,36 @@
 
   .effect__box {
     width: 100%;
-    margin-top: 59px;
+    margin-top: 56px;
 
     display: flex;
     justify-content: space-between;
+  }
+
+  .effect__timer-box {
+    position: relative;
+
+    width: 238px;
+    height: 276px;
+    margin-top: 0;
+    margin-right: 68px;
+
+    background: url("../../img/icon-editor-diagram-fill.svg") no-repeat center 55px,
+                url("../../img/icon-timer.svg") no-repeat center center;
+    background-size: 202px auto, contain;
+  }
+
+  .effect__timer-box::before {
+    content: "24";
+
+    position: absolute;
+    top: 75px;
+    left: 65px;
+
+    font-size: 96px;
+    line-height: 149.47px;
+    font-weight: bold;
+    color: #d22856;
   }
 
   .effect__text-box {
@@ -67,16 +93,27 @@
     justify-content: flex-start;
   }
 
-  .effect__image {
+  .effect__timer-box {
     width: 298px;
     height: 345px;
-    margin-top: 22px;
+    margin-top: 20px;
     margin-right: 68px;
+
+    background-position: center 70px, center center;
+    background-size: 253px auto, contain;
+  }
+
+  .effect__timer-box::before {
+    top: 96px;
+    left: 80px;
+
+    font-size: 120px;
+    line-height: 186.84px;
   }
 
   .effect__text-box {
     width: 530px;
-    margin-top: 117px;
+    margin-top: 115px;
   }
 
   .effect__title br {

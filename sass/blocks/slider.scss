@@ -25,7 +25,6 @@
 .btn-plan-2:checked ~ .slider__box--plan label[for="btn-plan-2"],
 .btn-plan-3:checked ~ .slider__box--plan label[for="btn-plan-3"] {
   background-color: transparent;
-  /*border: 3px solid #283645;*/
   box-shadow: 0 0 0 3px #283645;
   transition: 0.4s;
 }
@@ -34,7 +33,6 @@
 .btn-reviews-2:checked ~ .slider__box--reviews label[for="btn-reviews-2"],
 .btn-reviews-3:checked ~ .slider__box--reviews label[for="btn-reviews-3"] {
   background-color: transparent;
-  /*border: 3px solid #283645;*/
   box-shadow: 0 0 0 3px #283645;
   transition: 0.4s;
 }

@@ -28,8 +28,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  /*border-bottom: 1px solid rgba(0, 0, 0, 0.1);*/
 }
 
 .post__editor-box {
@@ -111,16 +109,11 @@
 
   .post__box {
     padding-top: 57px;
-    padding-bottom: 53px;
+    padding-bottom: 48px;
 
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-  }
-
-  .post__image {
-    width: 300px;
-    height: 400px;
   }
 
   .post__image-box {
@@ -231,7 +224,7 @@
   }
 
   .post__box {
-    padding-bottom: 56px;
+    padding-bottom: 51px;
   }
 
   .post__image-box {

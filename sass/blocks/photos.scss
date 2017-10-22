@@ -148,11 +148,6 @@
     margin-bottom: 50px;
   }
 
-  .photos__image--top img {
-    width: 700px;
-    height: 510px;
-  }
-
   .photos__image--top {
     width: 700px;
   }
@@ -162,8 +157,7 @@
   }
 
   .photos__post--top {
-    padding: 24px 29px 14px 27px;
-
+    padding: 19px 29px 14px 27px;
 
     flex-direction: row;
     justify-content: space-between;
@@ -183,7 +177,7 @@
 
   .photos__post {
     min-height: 109px;
-    padding: 24px 32px 22.5px 27px;
+    padding: 19px 32px 22.5px 27px;
   }
 
   .photos__like-count {
@@ -210,11 +204,6 @@
     width: 300px;
   }
 
-  .photos__item img {
-    width: 300px;
-    height: 300px;
-  }
-
   .photos__ask--bottom {
     margin-top: 43px;
     margin-bottom: 69px;
@@ -228,18 +217,13 @@
     overflow: visible;
   }
 
-  .photos__item--top {
-    width: 940px;
-  }
-
   .photos__ask {
     width: 580px;
     margin-bottom: 88px;
   }
 
-  .photos__image--top img {
-    width: 1200px;
-    height: 506px;
+  .photos__item--top {
+    width: 940px;
   }
 
   .photos__image--top {
@@ -247,7 +231,7 @@
   }
 
   .photos__post--top {
-  padding: 24px 31px 13px 27px;
+  padding: 19px 31px 13px 27px;
   }
 
   .photos__post--top .photos__text--comment {

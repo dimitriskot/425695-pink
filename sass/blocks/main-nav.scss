@@ -1,10 +1,6 @@
 .main-nav {
   width: 320px;
   margin: 0 auto;
-
-  background-color: #283645;
-
-  /*background-color: rgba(0, 0, 0, 0.3);*/
 }
 
 .main-nav__wrapper {
@@ -15,41 +11,66 @@
   flex-direction: column;
 }
 
-.main-nav__toggle--close {
+.main-nav__toggle {
   position: relative;
+  top: 0;
+  right: 0;
+  z-index: 2;
 
-  width: 24px;
-  height: 23px;
-
-  font-size: 0;
+  display: block;
+  width: 50px;
+  height: 24px;
 
   background-color: transparent;
-  border: 0;
 
   cursor: pointer;
+  border: none;
 }
 
-.main-nav__toggle--close::before,
-.main-nav__toggle--close::after {
+.main-nav--closed .main-nav__toggle::before {
   content: "";
 
   position: absolute;
-  top: 9px;
-  left: -3px;
+  top: 0;
+  right: 0;
 
-
-  width: 30px;
-  height: 5px;
+  width: 50px;
+  height: 4px;
 
   background-color: #ffffff;
+  box-shadow: 0 2px 0 -1px rgba(255, 255, 255, 0.3), 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff, 0 18px 0 -1px rgba(255, 255, 255, 0.3);
 }
 
-.main-nav__toggle--close::before {
-  transform: rotate(45deg);
-}
+.main-nav--opened .main-nav__toggle {
+  width: 24px;
 
-.main-nav__toggle--close::after {
-  transform: rotate(-45deg);
+  top: 0;
+  right: 0;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 8px;
+    right: -4px;
+
+    width: 30px;
+    height: 5px;
+
+    background-color: #ffffff;
+
+    border-radius: 2px;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 .main-nav__list {
@@ -60,8 +81,22 @@
   display: flex;
   flex-direction: column;
 
+  background-color: #283645;
+
   list-style: none;
 }
+
+@media (max-width: $no-desktop) {
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--closed .page-header__box-wrapper {
+    height: 66px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
 
 @media (min-width: $tablet-width) {
   .main-nav {
@@ -90,6 +125,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    background-color: transparent;
   }
 
   .main-nav__toggle {

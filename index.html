@@ -4,18 +4,25 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/outline.css">
 </head>
 
 <body>
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <div class="main-nav__wrapper">
         <div class="page-header__box-wrapper">
           <div class="page-header__box">
-            <img src="img/logo-pink-white-mobile.svg" class="page-header__logo" alt="Pink" width="75" height="22">
-            <button class="main-nav__toggle main-nav__toggle--close main-nav__toggle--open" type="button">Закрыть меню</button>
+            <picture>
+              <source class="page-header__logo" media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+              <source class="page-header__logo" media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" alt="Pink">
+            </picture>
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Закрыть меню</span>
+            </button>
           </div>
         </div>
         <ul class="main-nav__list site-list">
@@ -39,7 +46,7 @@
         <div class="download__box">
           <h2 class="download__title">Взгляните на жизнь иначе!</h2>
           <a href="#" class="button button__download">Скачать приложение</a>
-          <div class="download__sprite">
+          <div class="download__platform-box">
             <a href="#" class="download__platform download__platform--apple" title="Скачать для iOS">
               <svg class="" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                 y="0px" width="47px" height="56px" viewBox="0 0 47 56" enable-background="new 0 0 47 56" xml:space="preserve">
@@ -110,13 +117,17 @@
           </ul>
           <div class="features__image-box">
             <div class="features__image-crop features__image-grey">
-              <img src="img/iphone-screen-mobile@1x.png" class="features__image" alt="Mobile" width="157" height="320">
+              <img src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" class="features__image" alt="Mobile">
             </div>
             <div class="features__image-crop features__image-pink">
-              <img src="img/iphone-screen-mobile@1x.png" class="features__image" alt="Mobile" width="157" height="320">
+              <img src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" class="features__image" alt="Mobile">
             </div>
-            <div class="features__image-crop  features__image-smile">
-              <img src="img/iphone-screen-mobile@1x.png" class="features__image" alt="Mobile" width="157" height="320">
+            <div class="features__image-crop features__image-smile">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+                <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+                <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" class="features__image" alt="Mobile">
+              </picture>
             </div>
           </div>
         </div>
@@ -125,7 +136,8 @@
     <section class="effect">
       <div class="container__wrapper">
         <div class="effect__box">
-          <img src="http://placehold.it/238x276" class="effect__image" alt="Mobile" width="238" height="276">
+          <div class="effect__timer-box">
+          </div>
           <div class="effect__text-box">
             <h2 class="effect__title">
               Эффект
@@ -148,7 +160,7 @@
           <input class="btn-reviews-1" type="radio" id="btn-reviews-1" name="toggle-reviews" checked>
           <input class="btn-reviews-2" type="radio" id="btn-reviews-2" name="toggle-reviews">
           <input class="btn-reviews-3" type="radio" id="btn-reviews-3" name="toggle-reviews">
-          <img src="http://placehold.it/79x63" class="reviews__icon" alt="quote" width="79" height="63">
+          <img src="img/icon-quotes.svg" class="reviews__icon" alt="quote" width="79" height="63">
           <div class="reviews__inner">
             <blockquote class="reviews__item">
               <p class="reviews__post">
@@ -381,6 +393,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js" type="text/javascript"></script>
 </body>
 
 </html>
