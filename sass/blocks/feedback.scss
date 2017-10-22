@@ -58,6 +58,8 @@
   height: 200px;
 
   background: url(../../img/bg-map-mobile@1x.png) no-repeat center bottom;
+
+  overflow: hidden;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -177,7 +179,6 @@
       background-size: 1200px auto;
     }
   }
-
 
   .feedback__map::before {
     height: 100px;
