@@ -15,19 +15,15 @@
       <div class="main-nav__wrapper">
         <div class="page-header__box-wrapper">
           <div class="page-header__box">
-            <picture>
-              <source class="page-header__logo" media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-              <source class="page-header__logo" media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-              <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" alt="Pink">
-            </picture>
+            <a class="page-header__logo"></a>
             <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Закрыть меню</span>
             </button>
           </div>
         </div>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link">Главная</a>
+          <li class="site-list__item site-list__item--current">
+            <a>Главная</a>
           </li>
           <li class="site-list__item">
             <a href="photo.html" class="site-list__link">Фотографии</a>
@@ -41,34 +37,39 @@
         </ul>
       </div>
     </nav>
-    <section class="download">
-      <div class="container__wrapper">
-        <div class="download__box">
-          <h2 class="download__title">Взгляните на жизнь иначе!</h2>
-          <a href="https://www.apple.com/ru/itunes/download/" class="button button__download" target="_blank">Скачать приложение</a>
-          <div class="download__platform-box">
-            <a href="https://www.apple.com/ru/itunes/download/" class="download__platform download__platform--apple" title="Скачать для iOS" target="_blank">
-              <svg width="47" height="56">
-                <use xlink:href="img/sprite.svg#icon-apple"></use>
-              </svg>
-            </a>
-            <a href="https://play.google.com/store?hl=ru" class="download__platform download__platform--android" title="Скачать для Android" target="_blank">
-              <svg width="43" height="47">
-                <use xlink:href="img/sprite.svg#icon-android"></use>
-              </svg>
-            </a>
-            <a href="https://www.microsoft.com/ru-ru/store/apps/windows?icid=CNavAppsWindowsApps" class="download__platform download__platform--microsoft" title="Скачать для Windows" target="_blank">
-              <svg width="44" height="41">
-                <use xlink:href="img/sprite.svg#icon-microsoft"></use>
-              </svg>
-            </a>
+    <div class="page-header__intro">
+      <section class="download">
+        <div class="container__wrapper">
+          <div class="download__box">
+            <h2 class="download__title">Взгляните на жизнь иначе!</h2>
+            <a href="https://www.apple.com/ru/itunes/download/" class="button button__download" target="_blank">Скачать приложение</a>
+            <div class="download__platform-box">
+              <a href="https://www.apple.com/ru/itunes/download/" class="download__platform download__platform--apple" title="Скачать для iOS"
+                target="_blank">
+                <svg width="47" height="56">
+                  <use xlink:href="img/sprite.svg#icon-apple"></use>
+                </svg>
+              </a>
+              <a href="https://play.google.com/store?hl=ru" class="download__platform download__platform--android" title="Скачать для Android"
+                target="_blank">
+                <svg width="43" height="47">
+                  <use xlink:href="img/sprite.svg#icon-android"></use>
+                </svg>
+              </a>
+              <a href="https://www.microsoft.com/ru-ru/store/apps/windows?icid=CNavAppsWindowsApps" class="download__platform download__platform--microsoft"
+                title="Скачать для Windows" target="_blank">
+                <svg width="44" height="41">
+                  <use xlink:href="img/sprite.svg#icon-microsoft"></use>
+                </svg>
+              </a>
+            </div>
+            <p class="download__text">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
           </div>
-          <p class="download__text">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </header>
   <main class="container">
     <div class="container__wrapper">
@@ -187,6 +188,16 @@
             <label for="btn-reviews-1" class="slider__toggle"></label>
             <label for="btn-reviews-2" class="slider__toggle"></label>
             <label for="btn-reviews-3" class="slider__toggle"></label>
+          </div>
+          <div class="reviews__arrow reviews__arrow--left">
+            <svg class="reviews__arrow--icon" width="22" height="41" fill="rgba(40, 54,69, 0.3)">
+              <use xlink:href="img/sprite.svg#arrow-left"></use>
+            </svg>
+          </div>
+          <div class="reviews__arrow reviews__arrow--right">
+            <svg class="reviews__arrow--icon" width="22" height="41" fill="rgba(40, 54,69, 0.3)">
+              <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
           </div>
         </div>
       </div>
@@ -319,7 +330,9 @@
             <p class="feedback__text feedback__contacts--mail">
               Пишите:
               <br>
-              <span class="feedback__contacts">mail@htmlacademy.ru</span>
+              <span class="feedback__contacts">
+                <a class="feedback__contacts--link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              </span>
             </p>
             <p class="feedback__text feedback__contacts--adress">
               Приезжайте в гости:
@@ -331,15 +344,14 @@
       </div>
     </section>
     <div class="feedback__map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6203691727897!2d30.324437926736444!3d59.93844134879724!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1508678387275" width="100%" height="100%" align="center" style="border:0" allowfullscreen></iframe>
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8b0a5ec4de2212b72b06f62745d077fff0cb4f14f028dd1ccc185ed831fccfc4&amp;source=constructor"
+        frameborder="0"></iframe>
     </div>
   </main>
   <footer class="footer footer--index">
     <div class="container__wrapper">
       <div class="footer__box">
-        <svg class="footer__logo" width="147" height="40">
-          <use xlink:href="img/sprite.svg#footer-pink"></use>
-        </svg>
+        <a class="footer__logo"></a>
         <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">
@@ -379,7 +391,7 @@
     </div>
   </footer>
   <script src="js/script.js" type="text/javascript"></script>
-  <script src="js/svgxuse.js" defer></script>
+  <script src="js/svgxuse.js" type="text/javascript" defer></script>
   <script src="js/picturefill.js" type="text/javascript" async></script>
 </body>
 

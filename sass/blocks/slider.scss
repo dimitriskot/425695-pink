@@ -21,6 +21,14 @@
   cursor: pointer;
 }
 
+.slider__toggle:hover {
+  background-color: rgba(40, 54, 69, 0.6);
+}
+
+.slider__toggle:active {
+  background-color: rgba(40, 54, 69, 0.1);
+}
+
 .btn-plan-1:checked ~ .slider__box--plan label[for="btn-plan-1"],
 .btn-plan-2:checked ~ .slider__box--plan label[for="btn-plan-2"],
 .btn-plan-3:checked ~ .slider__box--plan label[for="btn-plan-3"] {
