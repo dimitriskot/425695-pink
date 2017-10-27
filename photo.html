@@ -4,19 +4,23 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/outline.css">
 </head>
 
 <body class="page">
   <header class="page-header page-header--inner">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <div class="main-nav__wrapper">
         <div class="page-header__box-wrapper">
           <div class="page-header__box">
-            <img src="img/logo-pink-white-mobile.svg" class="page-header__logo" alt="Pink" width="75" height="22">
-            <button class="main-nav__toggle main-nav__toggle--close main-nav__toggle--open" type="button">Закрыть меню</button>
+            <a href="index.html">
+              <img src="img/logo-pink-white-mobile.svg" class="page-header__logo" alt="Pink" width="75" height="22">
+            </a>
+            <button class="main-nav__toggle main-nav__toggle--close main-nav__toggle--open" type="button">
+              <span class="visually-hidden">Закрыть меню</span>
+            </button>
           </div>
         </div>
         <ul class="main-nav__list site-list">
@@ -49,7 +53,13 @@
           <article class="photos__item--top">
             <h3 class="visually-hidden">Пост пользователя</h3>
             <div class="photos__image--top">
-              <img src="img/panorama-mobile@1x.jpg" alt="photo" width="320" height="157">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                  <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="photo">
+                </picture>
+              </a>
             </div>
             <div class="photos__post--top">
               <cite class="photos__text photos__text--author">
@@ -71,7 +81,13 @@
           </article>
           <article class="photos__item">
             <h3 class="visually-hidden">Пост пользователя</h3>
-            <img src="img/photo-car-mobile@1x.jpg" alt="photo" width="280" height="180">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="photo">
+              </picture>
+            </a>
             <div class="photos__post">
               <cite class="photos__text photos__text--author">
                 Левон
@@ -92,7 +108,13 @@
           </article>
           <article class="photos__item">
             <h3 class="visually-hidden">Пост пользователя</h3>
-            <img src="img/photo-drumset-mobile@1x.jpg" alt="photo" width="280" height="180">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="photo">
+              </picture>
+            </a>
             <div class="photos__post">
               <cite class="photos__text photos__text--author">
                 Антон
@@ -113,7 +135,13 @@
           </article>
           <article class="photos__item">
             <h3 class="visually-hidden">Пост пользователя</h3>
-            <img src="img/photo-window-mobile@1x.jpg" alt="photo" width="280" height="180">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="photo">
+              </picture>
+            </a>
             <div class="photos__post">
               <cite class="photos__text photos__text--author">
                 Борис
@@ -134,7 +162,13 @@
           </article>
           <article class="photos__item">
             <h3 class="visually-hidden">Пост пользователя</h3>
-            <img src="img/photo-fair-mobile@1x.jpg" alt="photo" width="280" height="180">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="photo">
+              </picture>
+            </a>
             <div class="photos__post">
               <cite class="photos__text photos__text--author">
                 Сергей
@@ -155,7 +189,13 @@
           </article>
           <article class="photos__item">
             <h3 class="visually-hidden">Пост пользователя</h3>
-            <img src="img/photo-pov-mobile@1x.jpg" alt="photo" width="280" height="180">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="photo">
+              </picture>
+            </a>
             <div class="photos__post">
               <cite class="photos__text photos__text--author">
                 Максим
@@ -176,7 +216,13 @@
           </article>
           <article class="photos__item">
             <h3 class="visually-hidden">Пост пользователя</h3>
-            <img src="img/photo-wing-mobile@1x.jpg" alt="photo" width="280" height="180">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="photo">
+              </picture>
+            </a>
             <div class="photos__post">
               <cite class="photos__text photos__text--author">
                 Надежда
@@ -207,7 +253,11 @@
       <div class="container__wrapper">
         <div class="post__box">
           <div class="post__image-box">
-            <img src="img/photo-road-mobile@1x.jpg" class="post__image" alt="image" width="280" height="374">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+              <img src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="image">
+            </picture>
           </div>
           <div class="post__editor">
             <div class="post__editor-box">
@@ -239,10 +289,10 @@
                 </div>
               </div>
             </div>
-            <div class="post__scale-box post__scale--general">
+            <div class="post__scale-box post__scale--active">
               <div class="post__scale">
               </div>
-              <div class="post__toggle post__toggle--general"></div>
+              <div class="post__toggle post__toggle--active"></div>
             </div>
             <div class="post__buttons">
               <button class="button button__post">
@@ -301,6 +351,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js" type="text/javascript"></script>
 </body>
 
 </html>

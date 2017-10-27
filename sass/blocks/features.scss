@@ -91,10 +91,10 @@
 
   overflow: hidden;
 }
-
+/*
 .features__image {
   position: absolute;
-}
+}*/
 
 .features__image-grey,
 .features__image-pink {
@@ -142,11 +142,6 @@
     width: 268px;
     height: 482px;
   }
-
-  .features__image {
-    width: 268px;
-    height: 547px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -170,19 +165,12 @@
   }
 
   .features__image-box {
-    width: 100%;
-
     justify-content: space-between;
   }
 
   .features__image-crop {
-    width: 186px;
-    height: 301px;
-  }
-
-  .features__image {
-    width: 186px;
-    height: 382px;
+    width: 292px;
+    height: auto;
   }
 
   .features__image-grey,
@@ -190,17 +178,9 @@
     display: block;
   }
 
-  .features__image-grey {
-    margin-left: 54px;
-  }
-
-  .features__image-smile {
-    margin-right: 57px;
-  }
-
   .features__list {
     width: 100%;
-    padding-top: 57px;
+    padding-top: 53px;
 
     flex-direction: row;
     justify-content: space-around;
