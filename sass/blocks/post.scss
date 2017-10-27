@@ -47,6 +47,25 @@
   align-items: center;
 }
 
+.post__tools {
+  cursor: pointer;
+}
+
+@media (max-width: $only-mobile) {
+  .post__tools {
+    fill: rgba(40, 54, 69, 0.3);
+  }
+
+  .post__tools:hover {
+    fill: rgba(40, 54, 69, 0.5);
+  }
+
+  .post__tools:active,
+  .post__tools--current {
+    fill: #d22856;
+  }
+}
+
 .post__crop {
   margin-left: 36px;
   margin-right: 34px;

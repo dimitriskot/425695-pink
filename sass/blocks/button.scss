@@ -16,6 +16,8 @@
 
   border: 3px solid #ffffff;
   border-radius: 25px;
+
+  cursor: pointer;
 }
 
 .button__download {
@@ -23,6 +25,16 @@
   margin-bottom: 32px;
 
   text-decoration: none;
+}
+
+.button__download:hover {
+  color: #d22856;
+  background-color: #ffffff;
+}
+
+.button__download:active {
+  color: rgba(210, 40, 86, 0.3);
+  background-color: #ffffff;
 }
 
 .button__post {
@@ -34,12 +46,42 @@
   border-color: #d22856;
 }
 
+.button__post:hover {
+  color: #ffffff;
+
+  background-color: #d22856;
+
+  border-color: #d22856;
+}
+
+.button__post:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #d22856;
+
+  border-color: #d22856;
+}
+
 .button__cancel {
   margin: 0;
   margin-bottom: 41px;
   color: rgba(40, 54, 69, 0.1);
 
   border-color: rgba(40, 54, 69, 0.1);
+}
+
+.button__cancel:hover {
+  color: rgba(40, 54, 69, 0.3);
+
+  border-color: rgba(40, 54, 69, 0.3);
+}
+
+.button__cancel:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: rgba(40, 54, 69, 0.3);
+
+  border-color: rgba(40, 54, 69, 0.3);
 }
 
 .button__form {
@@ -56,6 +98,28 @@
 
   border: 2px solid #2aab6d;
   border-radius: 1px;
+}
+
+.button__form:hover {
+  background-color: #1c9b5e;
+
+  border-color: #1c9b5e;
+}
+
+.button__form:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #1c9b5e;
+
+  border-color: #1c9b5e;
+}
+
+.button__form:disabled {
+  color: #ffffff;
+
+  background-color: #e5e5e5;
+
+  border-color: #e5e5e5;
 }
 
 .button__form--send {

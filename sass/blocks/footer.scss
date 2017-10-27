@@ -20,7 +20,19 @@
 }
 
 .footer__logo {
+  width: 147px;
+  height: 40px;
   margin: 40px 0;
+
+  background: url(../img/logo-pink-blue-mobile.svg) no-repeat center center;
+}
+
+.footer__logo--inner:hover {
+  background: url(../img/logo-pink-blue-mobile-hover.svg) no-repeat center center;
+}
+
+.footer__logo--inner:active {
+  background: url(../img/logo-pink-blue-mobile-active.svg) no-repeat center center;
 }
 
 .footer__social {
@@ -42,6 +54,14 @@
   padding: 0;
 
   display: flex;
+}
+
+.footer__academy-icon:hover {
+  fill: #283645;
+}
+
+.footer__academy-icon:active {
+  fill: rgba(40, 54, 69, 0.3);
 }
 
 .footer__text {
@@ -93,6 +113,16 @@
 
   .footer__logo {
     margin-right: 234px;
+
+    background: url(../img/logo-pink-blue-desktop.svg) no-repeat center center;
+  }
+
+  .footer__logo--inner:hover {
+    background: url(../img/logo-pink-blue-desktop-hover.svg) no-repeat center center;
+  }
+
+  .footer__logo--inner:active {
+    background: url(../img/logo-pink-blue-desktop-active.svg) no-repeat center center;
   }
 
   .footer__social {

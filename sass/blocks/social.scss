@@ -23,3 +23,15 @@
   border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 50%;
 }
+
+.social__link:hover {
+  border-color: #283645;
+}
+
+.social__link:active {
+  border-color: rgba(40, 54, 69, 0.05);
+}
+
+.social__link:active svg {
+  fill: rgba(210, 40, 86, 0.3)
+}

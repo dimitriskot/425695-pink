@@ -17,6 +17,7 @@
 }
 
 .features__ask {
+  width: 100%;
   margin: 0;
   margin-top: 29px;
   padding: 0;
@@ -58,16 +59,19 @@
 }
 
 .features__title {
+  width: 100%;
   margin: 0;
   margin-bottom: 11px;
   padding: 0;
 
   font-size: 18px;
   line-height: 24px;
+  text-align: center;
   color: #000000;
 }
 
 .features__text {
+  width: 100%;
   margin: 0;
   padding: 0;
 
@@ -91,10 +95,6 @@
 
   overflow: hidden;
 }
-/*
-.features__image {
-  position: absolute;
-}*/
 
 .features__image-grey,
 .features__image-pink {

@@ -44,6 +44,7 @@
 }
 
 .form__item {
+  position: relative;
   display: flex;
 }
 
@@ -73,13 +74,50 @@
 }
 
 .form__input {
+  position: relative;
+
+  height: 30px;
   padding-left: 22px;
   padding-top: 14px;
   padding-bottom: 15px;
+
   font: inherit;
 
   border: 2px solid #e5e5e5;
   border-radius: 2px;
+}
+
+.form__input:hover {
+  border-color: #283645;
+}
+
+.form__input:active {
+  border-color: #d22856;
+}
+
+.form__input:focus {
+  outline-color: #d22856;
+}
+
+.form__input-icon {
+  display: none;
+  position: absolute;
+
+  top: 2px;
+  right: 2px;
+
+  width: 59px;
+  height: 59px;
+}
+
+.form__input-icon--phone {
+  background: #e5e5e5 url(../img/phone.svg) no-repeat center center;
+  background-size: 20px 19px;
+}
+
+.form__input-icon--mail {
+  background: #e5e5e5 url(../img/mail.svg) no-repeat center center;
+  background-size: 18px 13px;
 }
 
 .form__item--id:not(:last-child),
@@ -93,6 +131,7 @@
 }
 
 .form__box--achieving {
+  width: 100%;
   margin-top: 38px;
 }
 
@@ -122,10 +161,27 @@
 }
 
 .form__text input[type='checkbox']:checked+.form__checkbox-icon {
-  width: 39px;
-  height: 39px;
-  cursor: pointer;
   background-image: url(../img/checkbox-on.png);
+  background-repeat: no-repeat;
+}
+
+.form__text input[type='checkbox']:hover+.form__checkbox-icon {
+  background-image: url(../img/checkbox-off-hover.png);
+  background-repeat: no-repeat;
+}
+
+.form__text input[type='checkbox']:checked:hover+.form__checkbox-icon {
+  background-image: url(../img/checkbox-on-hover.png);
+  background-repeat: no-repeat;
+}
+
+.form__text input[type='checkbox']:active+.form__checkbox-icon {
+  background-image: url(../img/checkbox-off-active.png);
+  background-repeat: no-repeat;
+}
+
+.form__text input[type='checkbox']:checked:active+.form__checkbox-icon {
+  background-image: url(../img/checkbox-on-active.png);
   background-repeat: no-repeat;
 }
 
@@ -141,10 +197,27 @@
 }
 
 .form__text input[type='radio']:checked+.form__radio-icon {
-  width: 39px;
-  height: 39px;
-  cursor: pointer;
   background-image: url(../img/radio-on.png);
+  background-repeat: no-repeat;
+}
+
+.form__text input[type='radio']:hover+.form__radio-icon {
+  background-image: url(../img/radio-off-hover.png);
+  background-repeat: no-repeat;
+}
+
+.form__text input[type='radio']:checked:hover+.form__radio-icon {
+  background-image: url(../img/radio-on-hover.png);
+  background-repeat: no-repeat;
+}
+
+.form__text input[type='radio']:active+.form__radio-icon {
+  background-image: url(../img/radio-off-active.png);
+  background-repeat: no-repeat;
+}
+
+.form__text input[type='radio']:checked:active+.form__radio-icon {
+  background-image: url(../img/radio-on-active.png);
   background-repeat: no-repeat;
 }
 
@@ -347,6 +420,7 @@
 
   .form__label--legend {
     width: auto;
+    margin: 0 auto;
   }
 
   .form__legend--contacts {
@@ -366,6 +440,10 @@
     margin-left: 20px;
     margin-top: 17px;
     margin-bottom: 0;
+  }
+
+  .form__input-icon {
+    display: block;
   }
 
   .form__box--achieving {
