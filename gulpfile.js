@@ -7,7 +7,10 @@ var postcss = require("gulp-postcss");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var autoprefixer = require("autoprefixer");
-var minify = require("gulp-csso");
+var minifyCss = require("gulp-csso");
+var minifyHtml = require("gulp-htmlmin");
+var uglify = require("gulp-uglify");
+var pump = require("pump");
 var imagemin = require("gulp-imagemin");
 var svgstore = require("gulp-svgstore");
 var rename = require("gulp-rename");
@@ -23,7 +26,7 @@ gulp.task("style", function () {
       autoprefixer()
     ]))
     .pipe(gulp.dest("build/css"))
-    .pipe(minify())
+    .pipe(minifyCss())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
@@ -61,6 +64,22 @@ gulp.task("html", function () {
     .pipe(server.stream());
 });
 
+gulp.task("minify", function() {
+  return gulp.src('*.html')
+    .pipe(minifyHtml({collapseWhitespace: true}))
+    .pipe(gulp.dest("build"));
+});
+
+gulp.task("compress", function (cb) {
+  pump([
+        gulp.src("js/**.js"),
+        uglify(),
+        gulp.dest("build")
+    ],
+    cb
+  );
+});
+
 gulp.task("serve", function () {
   server.init({
     server: "build",
@@ -81,6 +100,8 @@ gulp.task("build", function (done) {
     "style",
     "sprite",
     "html",
+    "minify",
+    "compress",
     done
   );
 });
