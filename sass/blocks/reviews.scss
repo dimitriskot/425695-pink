@@ -1,6 +1,4 @@
 .reviews {
-  height: 354px;
-
   background-color: #ffffff;
 }
 
@@ -81,10 +79,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .reviews {
-    height: 350px;
-  }
-
   .reviews__inner {
     width: 1860px;
     margin-top: 96px;
@@ -112,10 +106,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .reviews {
-    height: 402px;
-  }
-
   .reviews__box {
     position: relative;
 

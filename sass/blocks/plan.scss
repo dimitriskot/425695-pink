@@ -1,5 +1,4 @@
 .plan {
-  height: 470px;
   background-color: #f2f2f2;
   background-image: url(../img/bg-triangle-white.svg);
   background-repeat: no-repeat;
@@ -146,10 +145,6 @@
     display: none;
   }
 
-  .plan {
-    height: 377px;
-  }
-
   .plan__box {
     width: 100%;
     display: flex;
@@ -219,10 +214,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .plan {
-    height: 536px;
-  }
-
   .plan__table {
     width: 940px;
     margin-top: 160px;

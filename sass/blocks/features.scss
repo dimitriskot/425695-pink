@@ -82,6 +82,7 @@
 }
 
 .features__image-box {
+  width: 100%;
   display: flex;
   justify-content: space-around;
 }
@@ -120,6 +121,7 @@
   .features__box {
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: flex-end;
   }
 
   .features__list {
@@ -184,6 +186,7 @@
 
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
   }
 
   .features__item {

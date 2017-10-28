@@ -5,6 +5,7 @@
 
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   list-style: none;
 }
@@ -33,5 +34,5 @@
 }
 
 .social__link:active svg {
-  fill: rgba(210, 40, 86, 0.3)
+  fill: rgba(210, 40, 86, 0.3);
 }
