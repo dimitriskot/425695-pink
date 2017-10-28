@@ -9,7 +9,10 @@
   <link rel="stylesheet" href="css/outline.css">
 </head>
 
-<body class="page">
+<body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header page-header--inner">
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <div class="main-nav__wrapper">
@@ -81,14 +84,14 @@
           <div class="form__box form__box--achieving">
             <div class="form__item form__item--checkbox">
               <label class="form__text" for="shark">
-                <input class="form__checkbox visually-hidden" type="checkbox" name="achieving" id="shark" checked>
+                <input class="form__checkbox visually-hidden" type="checkbox" name="achieving" id="shark" checked="">
                 <span class="form__checkbox-icon"></span>
                 Сделал селфи с акулой
               </label>
             </div>
             <div class="form__item form__item--checkbox">
               <label class="form__text" for="sunburned">
-                <input class="form__checkbox visually-hidden" type="checkbox" name="achieving" id="sunburned" checked>
+                <input class="form__checkbox visually-hidden" type="checkbox" name="achieving" id="sunburned" checked="">
                 <span class="form__checkbox-icon"></span>
                 Обгорел на пляже
               </label>
@@ -109,7 +112,7 @@
             </div>
             <div class="form__item form__item--checkbox">
               <label class="form__text" for="tower">
-                <input class="form__checkbox visually-hidden" type="checkbox" name="achieving" id="tower" checked>
+                <input class="form__checkbox visually-hidden" type="checkbox" name="achieving" id="tower" checked="">
                 <span class="form__checkbox-icon"></span>
                 Удержал башню
               </label>
@@ -135,14 +138,14 @@
                 Номер телефона
               </label>
               <input class="form__input" type="tel" name="contacts" id="phone" placeholder="Номер, пожалуйста" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}"
-                required>
+                required="">
               <div class="form__input-icon form__input-icon--phone"></div>
             </div>
             <div class="form__item form__item--contacts">
               <label for="email" class="form__label form__label--contacts">
                 Адрес почты
               </label>
-              <input class="form__input" type="email" name="contacts" id="email" placeholder="Введите почту *" required>
+              <input class="form__input" type="email" name="contacts" id="email" placeholder="Введите почту *" required="">
               <div class="form__input-icon form__input-icon--mail"></div>
             </div>
           </div>
@@ -156,7 +159,7 @@
           <div class="form__box form__box--application">
             <div class="form__item form__item--radio">
               <label class="form__text" for="ios">
-                <input class="form__checkbox visually-hidden" type="radio" name="application" id="ios" checked>
+                <input class="form__checkbox visually-hidden" type="radio" name="application" id="ios" checked="">
                 <span class="form__radio-icon"></span>
                 Pink для iOS
               </label>
@@ -260,8 +263,8 @@
     </div>
   </footer>
   <script src="js/script.js" type="text/javascript"></script>
-  <script src="js/svgxuse.js" type="text/javascript" defer></script>
-  <script src="js/picturefill.js" type="text/javascript" async></script>
+  <script src="js/svgxuse.js" type="text/javascript" defer=""></script>
+  <script src="js/picturefill.js" type="text/javascript" async=""></script>
 </body>
 
 </html>
