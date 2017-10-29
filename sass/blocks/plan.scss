@@ -1,6 +1,6 @@
 .plan {
   background-color: #f2f2f2;
-  background-image: url(../img/bg-triangle-white.svg);
+  background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
@@ -56,7 +56,7 @@
   overflow: hidden;
 }
 
-.plan__title--hit:before {
+.plan__title--hit::before {
   content: "Хит";
 
   position: absolute;
@@ -166,7 +166,7 @@
     width: 154px;
   }
 
-  .plan__title--hit:before {
+  .plan__title--hit::before {
     top: 1px;
     left: -35px;
   }
@@ -227,7 +227,7 @@
     width: 234px;
   }
 
-  .plan__title--hit:before {
+  .plan__title--hit::before {
     top: 10px;
     left: -30px;
   }
