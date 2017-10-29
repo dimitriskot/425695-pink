@@ -10,6 +10,9 @@
 </head>
 
 <body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header">
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <div class="main-nav__wrapper">
@@ -145,10 +148,10 @@
       <div class="container__wrapper">
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="reviews__box slider">
-          <input class="btn-reviews-1" type="radio" id="btn-reviews-1" name="toggle-reviews" checked>
+          <input class="btn-reviews-1" type="radio" id="btn-reviews-1" name="toggle-reviews" checked="">
           <input class="btn-reviews-2" type="radio" id="btn-reviews-2" name="toggle-reviews">
           <input class="btn-reviews-3" type="radio" id="btn-reviews-3" name="toggle-reviews">
-          <img src="img/icon-quotes.svg" class="reviews__icon" alt="quote" width="79" height="63">
+          <img src="img/quotes.svg" class="reviews__icon" alt="quote" width="79" height="63">
           <div class="reviews__inner">
             <blockquote class="reviews__item">
               <p class="reviews__post">
@@ -194,12 +197,12 @@
           </div>
           <div class="reviews__arrow reviews__arrow--left">
             <svg class="reviews__arrow--icon" width="22" height="41" fill="rgba(40, 54,69, 0.3)">
-              <use xlink:href="img/sprite.svg#arrow-left"></use>
+              <use xlink:href="img/sprite.svg#icon-review-arrow-left"></use>
             </svg>
           </div>
           <div class="reviews__arrow reviews__arrow--right">
             <svg class="reviews__arrow--icon" width="22" height="41" fill="rgba(40, 54,69, 0.3)">
-              <use xlink:href="img/sprite.svg#arrow-right"></use>
+              <use xlink:href="img/sprite.svg#icon-review-arrow-right"></use>
             </svg>
           </div>
         </div>
@@ -210,7 +213,7 @@
       <div class="container__wrapper">
         <div class="plan__box slider">
           <input class="btn-plan-1" type="radio" id="btn-plan-1" name="toggle-plan">
-          <input class="btn-plan-2" type="radio" id="btn-plan-2" name="toggle-plan" checked>
+          <input class="btn-plan-2" type="radio" id="btn-plan-2" name="toggle-plan" checked="">
           <input class="btn-plan-3" type="radio" id="btn-plan-3" name="toggle-plan">
           <table class="plan__table">
             <tr>
@@ -244,19 +247,19 @@
               <td class="plan__cell">
                 <div class="plan__cell-box">
                   <p class="plan__text plan__text--inner">Розовый фильтр</p>
-                  <img src="img/icon-yes.svg" class="plan__icon plan__icon--yes" alt="Yes" width="31" height="21">
+                  <img src="img/yes-mark.svg" class="plan__icon plan__icon--yes" alt="Yes" width="31" height="21">
                 </div>
               </td>
               <td class="plan__cell">
                 <div class="plan__cell-box">
                   <p class="plan__text plan__text--inner">Розовый фильтр</p>
-                  <img src="img/icon-yes.svg" class="plan__icon plan__icon--yes" alt="Yes" width="31" height="21">
+                  <img src="img/yes-mark.svg" class="plan__icon plan__icon--yes" alt="Yes" width="31" height="21">
                 </div>
               </td>
               <td class="plan__cell">
                 <div class="plan__cell-box">
                   <p class="plan__text plan__text--inner">Розовый фильтр</p>
-                  <img src="img/icon-yes.svg" class="plan__icon plan__icon--yes" alt="Yes" width="31" height="21">
+                  <img src="img/yes-mark.svg" class="plan__icon plan__icon--yes" alt="Yes" width="31" height="21">
                 </div>
               </td>
             </tr>
@@ -269,19 +272,19 @@
               <td class="plan__cell">
                 <div class="plan__cell-box">
                   <p class="plan__text plan__text--inner">Смайлики</p>
-                  <img src="img/icon-no.svg" class="plan__icon plan__icon--no" alt="No" width="27" height="26">
+                  <img src="img/no-mark.svg" class="plan__icon plan__icon--no" alt="No" width="27" height="26">
                 </div>
               </td>
               <td class="plan__cell">
                 <div class="plan__cell-box">
                   <p class="plan__text plan__text--inner">Смайлики</p>
-                  <img src="img/icon-yes.svg" class="plan__icon plan__icon--yes" alt="Yes" width="31" height="21">
+                  <img src="img/yes-mark.svg" class="plan__icon plan__icon--yes" alt="Yes" width="31" height="21">
                 </div>
               </td>
               <td class="plan__cell">
                 <div class="plan__cell-box">
                   <p class="plan__text plan__text--inner">Смайлики</p>
-                  <img src="img/icon-yes.svg" class="plan__icon plan__icon--yes" alt="Yes" width="31" height="21">
+                  <img src="img/yes-mark.svg" class="plan__icon plan__icon--yes" alt="Yes" width="31" height="21">
                 </div>
               </td>
             </tr>
@@ -294,19 +297,19 @@
               <td class="plan__cell">
                 <div class="plan__cell-box">
                   <p class="plan__text plan__text--inner">Комментарии</p>
-                  <img src="img/icon-no.svg" class="plan__icon plan__icon--no" alt="No" width="27" height="26">
+                  <img src="img/no-mark.svg" class="plan__icon plan__icon--no" alt="No" width="27" height="26">
                 </div>
               </td>
               <td class="plan__cell">
                 <div class="plan__cell-box">
                   <p class="plan__text plan__text--inner">Комментарии</p>
-                  <img src="img/icon-no.svg" class="plan__icon plan__icon--no" alt="No" width="27" height="26">
+                  <img src="img/no-mark.svg" class="plan__icon plan__icon--no" alt="No" width="27" height="26">
                 </div>
               </td>
               <td class="plan__cell">
                 <div class="plan__cell-box">
                   <p class="plan__text plan__text--inner">Комментарии</p>
-                  <img src="img/icon-yes.svg" class="plan__icon plan__icon--yes" alt="Yes" width="31" height="21">
+                  <img src="img/yes-mark.svg" class="plan__icon plan__icon--yes" alt="Yes" width="31" height="21">
                 </div>
               </td>
             </tr>
@@ -394,8 +397,8 @@
     </div>
   </footer>
   <script src="js/script.js" type="text/javascript"></script>
-  <script src="js/svgxuse.js" type="text/javascript" defer></script>
-  <script src="js/picturefill.js" type="text/javascript" async></script>
+  <script src="js/svgxuse.js" type="text/javascript" defer=""></script>
+  <script src="js/picturefill.js" type="text/javascript" async=""></script>
 </body>
 
 </html>

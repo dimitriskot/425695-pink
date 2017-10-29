@@ -9,7 +9,10 @@
   <link rel="stylesheet" href="css/outline.css">
 </head>
 
-<body class="page">
+<body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header">
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <div class="main-nav__wrapper">
@@ -75,7 +78,7 @@
               </p>
               <div class="photos__like--top">
                 <svg class="photos__like-icon" width="13" height="12" fill="#d22856">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                  <use xlink:href="img/sprite.svg#icon-heart"></use>
                 </svg>
                 <p class="photos__like-count">
                   Нравится: 215
@@ -106,7 +109,7 @@
               </p>
               <div class="photos__like">
                 <svg class="photos__like-icon" width="13" height="12" fill="#d22856">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                  <use xlink:href="img/sprite.svg#icon-heart"></use>
                 </svg>
                 <p class="photos__like-count">
                   Нравится: 356
@@ -137,7 +140,7 @@
               </p>
               <div class="photos__like">
                 <svg class="photos__like-icon" width="13" height="12" fill="#d22856">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                  <use xlink:href="img/sprite.svg#icon-heart"></use>
                 </svg>
                 <p class="photos__like-count">
                   Нравится: 666
@@ -168,7 +171,7 @@
               </p>
               <div class="photos__like">
                 <svg class="photos__like-icon" width="13" height="12" fill="#d22856">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                  <use xlink:href="img/sprite.svg#icon-heart"></use>
                 </svg>
                 <p class="photos__like-count">
                   Нравится: 215
@@ -199,7 +202,7 @@
               </p>
               <div class="photos__like">
                 <svg class="photos__like-icon" width="13" height="12" fill="#d22856">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                  <use xlink:href="img/sprite.svg#icon-heart"></use>
                 </svg>
                 <p class="photos__like-count">
                   Нравится: 4
@@ -230,7 +233,7 @@
               </p>
               <div class="photos__like">
                 <svg class="photos__like-icon" width="13" height="12" fill="#d22856">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                  <use xlink:href="img/sprite.svg#icon-heart"></use>
                 </svg>
                 <p class="photos__like-count">
                   Нравится: 150
@@ -261,7 +264,7 @@
               </p>
               <div class="photos__like">
                 <svg class="photos__like-icon" width="13" height="12" fill="#d22856">
-                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                  <use xlink:href="img/sprite.svg#icon-heart"></use>
                 </svg>
                 <p class="photos__like-count">
                   Нравится: 2560
@@ -294,8 +297,8 @@
           <div class="post__editor">
             <div class="post__editor-box">
               <div class="post__tools-box post__crop">
-                <svg class="post__tools post__tools--crop post__tools--current" width="44" height="44" fill="#d22856">
-                  <use xlink:href="img/sprite.svg#icon-crop"></use>
+                <svg class="post__tools post__tools--crop post__tools--current" fill="#d22856">
+                  <use xlink:href="img/sprite.svg#icon-editor-crop"></use>
                 </svg>
                 <div class="post__scale-box post__scale--crop">
                   <div class="post__scale"></div>
@@ -303,8 +306,8 @@
                 </div>
               </div>
               <div class="post__tools-box post__fill">
-                <svg class="post__tools post__tools--fill" width="48" height="43" fill="#d22856">
-                  <use xlink:href="img/sprite.svg#icon-fill"></use>
+                <svg class="post__tools post__tools--fill" fill="#d22856">
+                  <use xlink:href="img/sprite.svg#icon-editor-fill"></use>
                 </svg>
                 <div class="post__scale-box post__scale--fill">
                   <div class="post__scale"></div>
@@ -312,8 +315,8 @@
                 </div>
               </div>
               <div class="post__tools-box post__contrast">
-                <svg class="post__tools post__tools--contrast" width="32" height="32" fill="#d22856">
-                  <use xlink:href="img/sprite.svg#icon-contrast"></use>
+                <svg class="post__tools post__tools--contrast" fill="#d22856">
+                  <use xlink:href="img/sprite.svg#icon-editor-contrast"></use>
                 </svg>
                 <div class="post__scale-box post__scale--contrast">
                   <div class="post__scale"></div>
@@ -374,7 +377,7 @@
           </p>
           <a class="footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
             <svg class="footer__academy-icon" width="27" height="34" fill="#d22856">
-              <use xlink:href="img/sprite.svg#footer-academy"></use>
+              <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
             </svg>
           </a>
         </div>
@@ -382,8 +385,8 @@
     </div>
   </footer>
   <script src="js/script.js" type="text/javascript"></script>
-  <script src="js/svgxuse.js" type="text/javascript" defer></script>
-  <script src="js/picturefill.js" type="text/javascript" async></script>
+  <script src="js/svgxuse.js" type="text/javascript" defer=""></script>
+  <script src="js/picturefill.js" type="text/javascript" async=""></script>
 </body>
 
 </html>
