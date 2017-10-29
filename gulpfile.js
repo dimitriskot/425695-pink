@@ -66,6 +66,9 @@ gulp.task("html", function () {
 
 gulp.task("minify", function() {
   return gulp.src('*.html')
+    .pipe(posthtml([
+      include()
+    ]))
     .pipe(minifyHtml({collapseWhitespace: true}))
     .pipe(gulp.dest("build"));
 });
@@ -99,7 +102,6 @@ gulp.task("build", function (done) {
     "copy",
     "style",
     "sprite",
-    "html",
     "minify",
     "compress",
     done
