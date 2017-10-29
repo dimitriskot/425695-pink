@@ -160,32 +160,32 @@
   background-repeat: no-repeat;
 }
 
-.form__text input[type='checkbox']:checked+ .form__checkbox-icon {
+.form__text input[type="checkbox"]:checked + .form__checkbox-icon {
   background-image: url("../img/checkbox-on.png");
   background-repeat: no-repeat;
 }
 
-.form__text input[type='checkbox']:hover+ .form__checkbox-icon {
+.form__text input[type="checkbox"]:hover + .form__checkbox-icon {
   background-image: url("../img/checkbox-off-hover.png");
   background-repeat: no-repeat;
 }
 
-.form__text input[type='checkbox']:checked:hover+ .form__checkbox-icon {
+.form__text input[type="checkbox"]:checked:hover + .form__checkbox-icon {
   background-image: url("../img/checkbox-on-hover.png");
   background-repeat: no-repeat;
 }
 
-.form__text input[type='checkbox']:active+ .form__checkbox-icon {
+.form__text input[type="checkbox"]:active + .form__checkbox-icon {
   background-image: url("../img/checkbox-off-active.png");
   background-repeat: no-repeat;
 }
 
-.form__text input[type='checkbox']:checked:active+ .form__checkbox-icon {
+.form__text input[type="checkbox"]:checked:active + .form__checkbox-icon {
   background-image: url("../img/checkbox-on-active.png");
   background-repeat: no-repeat;
 }
 
-.form__text input[type="radio"]+ .form__radio-icon {
+.form__text input[type="radio"] + .form__radio-icon {
   position: absolute;
   top: 0;
   left: 0;
@@ -196,27 +196,27 @@
   background-repeat: no-repeat;
 }
 
-.form__text input[type='radio']:checked+ .form__radio-icon {
+.form__text input[type="radio"]:checked + .form__radio-icon {
   background-image: url("../img/radio-on.png");
   background-repeat: no-repeat;
 }
 
-.form__text input[type='radio']:hover+ .form__radio-icon {
+.form__text input[type="radio"]:hover + .form__radio-icon {
   background-image: url("../img/radio-off-hover.png");
   background-repeat: no-repeat;
 }
 
-.form__text input[type='radio']:checked:hover+ .form__radio-icon {
+.form__text input[type="radio"]:checked:hover + .form__radio-icon {
   background-image: url("../img/radio-on-hover.png");
   background-repeat: no-repeat;
 }
 
-.form__text input[type='radio']:active+ .form__radio-icon {
+.form__text input[type="radio"]:active + .form__radio-icon {
   background-image: url("../img/radio-off-active.png");
   background-repeat: no-repeat;
 }
 
-.form__text input[type='radio']:checked:active+ .form__radio-icon {
+.form__text input[type="radio"]:checked:active + .form__radio-icon {
   background-image: url("../img/radio-on-active.png");
   background-repeat: no-repeat;
 }

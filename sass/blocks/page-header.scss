@@ -58,14 +58,14 @@
   margin-bottom: 270px;
 
   background: url("../img/iphone-hand-mobile@1x.png") no-repeat left bottom,
-            #1d2631 url("../img/bg-back-mobile@1x.jpg") no-repeat center bottom;
+    #1d2631 url("../img/bg-back-mobile@1x.jpg") no-repeat center bottom;
   background-size: auto auto, 706px auto;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .page-header__intro {
     background: url("../img/iphone-hand-mobile@2x.png") no-repeat left bottom,
-              #1d2631 url("../img/bg-back-mobile@2x.jpg") no-repeat center bottom;
+      #1d2631 url("../img/bg-back-mobile@2x.jpg") no-repeat center bottom;
     background-size: 258px auto, 700px auto;
   }
 }
@@ -119,13 +119,13 @@
     margin-bottom: 0;
 
     background: url("../img/iphone-hand-tablet@1x.png") no-repeat center bottom,
-              #1d2631 url("../img/bg-back-tablet@1x.jpg") no-repeat center bottom;
+      #1d2631 url("../img/bg-back-tablet@1x.jpg") no-repeat center bottom;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .page-header__intro {
       background: url("../img/iphone-hand-tablet@2x.png") no-repeat left bottom,
-                #1d2631 url("../img/bg-back-tablet@2x.jpg") no-repeat center bottom;
+        #1d2631 url("../img/bg-back-tablet@2x.jpg") no-repeat center bottom;
       background-size: 700px auto, 1200px auto;
     }
   }
@@ -189,13 +189,13 @@
     margin-bottom: 0;
 
     background: url("../img/iphone-hand-desktop@1x.png") no-repeat 146px bottom,
-              #1d2631 url("../img/bg-back-desktop@1x.jpg") no-repeat center bottom;
+      #1d2631 url("../img/bg-back-desktop@1x.jpg") no-repeat center bottom;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .page-header__intro {
       background: url("../img/iphone-hand-desktop@2x.png") no-repeat 146px bottom,
-                #1d2631 url("../img/bg-back-desktop@2x.jpg") no-repeat center bottom;
+        #1d2631 url("../img/bg-back-desktop@2x.jpg") no-repeat center bottom;
       background-size: 1050px auto, 2560px auto;
     }
   }
