@@ -85,6 +85,8 @@
 
   border: 2px solid #e5e5e5;
   border-radius: 2px;
+
+  outline: none;
 }
 
 .form__input:hover {
@@ -96,7 +98,7 @@
 }
 
 .form__input:focus {
-  outline-color: #d22856;
+  border-color: #d22856;
 }
 
 .form__input-icon {
@@ -243,6 +245,8 @@
   margin-top: 15px;
   padding-top: 17px;
   padding-left: 16px;
+
+  font-family: inherit;
 
   border: 2px solid #e5e5e5;
   border-radius: 2px;
