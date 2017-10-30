@@ -81,7 +81,7 @@
 @media (min-width: $tablet-width) {
   .reviews__inner {
     width: 1860px;
-    margin-top: 96px;
+    margin-top: 99px;
   }
 
   .reviews__item {
@@ -124,11 +124,11 @@
     cursor: pointer;
   }
 
-  .reviews__arrow:hover .reviews__arrow--icon {
+  .reviews__arrow:hover .reviews__icon {
     fill: rgba(40, 54, 69, 0.6);
   }
 
-  .reviews__arrow:active .reviews__arrow--icon {
+  .reviews__arrow:active .reviews__icon {
     fill: rgba(40, 54, 69, 0.1);
   }
 

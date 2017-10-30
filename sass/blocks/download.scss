@@ -65,10 +65,12 @@
 
 @media (min-width: $tablet-width) {
   .download {
-    left: 20px;
-    bottom: 110px;
+    position: static;
     width: 300px;
     margin: 0;
+    margin-top: 202px;
+    margin-left: 20px;
+    margin-bottom: 20px;
 
     display: flex;
 
@@ -81,7 +83,6 @@
 
   .download__title {
     width: 220px;
-
     font-size: 40px;
     line-height: 48px;
   }
@@ -114,10 +115,11 @@
 
 @media (min-width: $desktop-width) {
   .download {
-    left: 130px;
-    bottom: 122px;
     width: 300px;
     margin: 0;
+    margin-top: 219px;
+    margin-left: 130px;
+    margin-bottom: 20px;
 
     display: flex;
 

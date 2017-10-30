@@ -20,7 +20,8 @@
 }
 
 .footer__logo-link {
-  margin: 40px 0;
+  margin-top: 40px;
+  margin-bottom: 35px;
 }
 
 .footer__logo--desktop {
@@ -32,7 +33,7 @@
   fill: #283645;
 }
 
-.footer__logo--glass {
+.footer__logo-glass {
   fill: #d22856;
 }
 
@@ -44,7 +45,7 @@
   fill: rgba(40, 54, 69, 0.3);
 }
 
-.footer__logo-link[href]:active .footer__logo--glass {
+.footer__logo-link[href]:active .footer__logo-glass {
   fill: rgba(210, 40, 86, 0.3);
 }
 
@@ -125,7 +126,7 @@
   }
 
   .footer__logo-link {
-    margin-right: 234px;
+    margin-right: 238px;
   }
 
   .footer__logo {

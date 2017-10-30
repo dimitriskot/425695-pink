@@ -32,7 +32,7 @@
 
 .post__editor-box {
   width: 100%;
-  margin-top: 41px;
+  margin-top: 37px;
 
   display: flex;
   justify-content: flex-start;
@@ -94,12 +94,12 @@
   position: relative;
   width: 240px;
   margin-top: 39px;
-  margin-bottom: 34px;
+  margin-bottom: 35px;
 }
 
-.post__scale--crop,
-.post__scale--fill,
-.post__scale--contrast {
+.post__scale-crop,
+.post__scale-fill,
+.post__scale-contrast {
   display: none;
 }
 
@@ -206,7 +206,7 @@
     margin-bottom: 27px;
   }
 
-  .post__scale--active {
+  .post__scale-active {
     display: none;
   }
 
@@ -216,21 +216,21 @@
     margin-right: 18px;
   }
 
-  .post__scale--crop,
-  .post__scale--fill,
-  .post__scale--contrast {
+  .post__scale-crop,
+  .post__scale-fill,
+  .post__scale-contrast {
     display: block;
   }
 
-  .post__scale--crop {
+  .post__scale-crop {
     margin-top: 19px;
   }
 
-  .post__scale--fill {
+  .post__scale-fill {
     margin-top: 36px;
   }
 
-  .post__scale--contrast {
+  .post__scale-contrast {
     margin-top: 33px;
   }
 

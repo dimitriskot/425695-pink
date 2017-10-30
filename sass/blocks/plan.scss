@@ -29,10 +29,6 @@
   transition: transform 0.8s ease;
 }
 
-.plan__title--empty {
-  background-color: transparent;
-}
-
 .plan__title {
   width: 276px;
   background-color: #283645;
@@ -118,7 +114,6 @@
 
 .plan__cell--option {
   display: none;
-  /*display: table-cell;*/
 }
 
 .plan__text {
@@ -154,6 +149,8 @@
 
   .plan__table {
     width: 620px;
+    margin-top: 88px;
+    margin-bottom: 59px;
 
     transition: none;
   }
@@ -191,6 +188,11 @@
     width: 153px;
   }
 
+  .plan__cell--empty {
+    background-color: transparent;
+    border: none;
+  }
+
   .plan__cell-box {
     height: 45px;
     justify-content: flex-start;
@@ -216,7 +218,8 @@
 @media (min-width: $desktop-width) {
   .plan__table {
     width: 940px;
-    margin-top: 160px;
+    margin-top: 152px;
+    margin-bottom: 88px;
   }
 
   .plan__title {

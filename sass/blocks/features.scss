@@ -6,28 +6,6 @@
   background-size: contain;
 }
 
-.features__slogan {
-  width: 100%;
-  padding-top: 11px;
-  padding-bottom: 32px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.features__ask {
-  width: 100%;
-  margin: 0;
-  margin-top: 29px;
-  padding: 0;
-
-  font-size: 24px;
-  line-height: 29px;
-  font-weight: lighter;
-  text-align: center;
-}
-
 .features__box {
   width: 100%;
   margin: 0;
@@ -82,7 +60,7 @@
 }
 
 .features__image-box {
-  width: 100%;
+  width: auto;
   display: flex;
   justify-content: space-around;
 }
@@ -103,21 +81,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .features__slogan {
-    padding-top: 21px;
-    padding-bottom: 49px;
-  }
-
-  .features__ask {
-    font-size: 40px;
-    line-height: 47px;
-  }
-
-  .features__ask:last-child {
-    width: 340px;
-    margin-top: 2px;
-  }
-
   .features__box {
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -136,6 +99,7 @@
     align-items: flex-start;
   }
 
+  .features__title,
   .features__text {
     text-align: left;
   }
@@ -147,26 +111,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  .features__slogan {
-    padding-top: 40px;
-    padding-bottom: 76px;
-  }
-
-  .features__ask {
-    font-size: 50px;
-    line-height: 59px;
-  }
-
-  .features__ask:last-child {
-    width: 430px;
-    margin-top: 0;
-  }
-
   .features__box {
     flex-direction: column-reverse;
   }
 
   .features__image-box {
+    width: 100%;
     justify-content: space-between;
   }
 

@@ -84,7 +84,7 @@
   border-color: rgba(40, 54, 69, 0.3);
 }
 
-.button__form {
+.button-form {
   width: 280px;
   height: 63px;
 
@@ -98,15 +98,17 @@
 
   border: 2px solid #2aab6d;
   border-radius: 1px;
+
+  cursor: pointer;
 }
 
-.button__form:hover {
+.button-form:hover {
   background-color: #1c9b5e;
 
   border-color: #1c9b5e;
 }
 
-.button__form:active {
+.button-form:active {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #1c9b5e;
@@ -114,7 +116,7 @@
   border-color: #1c9b5e;
 }
 
-.button__form:disabled {
+.button-form:disabled {
   color: #ffffff;
 
   background-color: #e5e5e5;
@@ -122,16 +124,16 @@
   border-color: #e5e5e5;
 }
 
-.button__form--send {
+.button-form__send {
   margin-bottom: 31px;
 }
 
-.button__form--ok {
+.button-form__ok {
   margin-top: 36px;
   margin-bottom: 50px;
 }
 
-.button__form--close {
+.button-form__close {
   margin-top: 80px;
   margin-bottom: 50px;
 }
@@ -154,17 +156,17 @@
     margin-bottom: 24px;
   }
 
-  .button__form--send {
+  .button-form__send {
     width: 300px;
     margin-bottom: 0;
   }
 
-  .button__form--ok {
+  .button-form__ok {
     margin-top: 39px;
     margin-bottom: 52px;
   }
 
-  .button__form--close {
+  .button-form__close {
     margin-top: 83px;
     margin-bottom: 52px;
   }
@@ -185,7 +187,7 @@
     margin-top: 146px;
   }
 
-  .button__form--close {
+  .button-form__close {
     width: 460px;
     margin-top: 83px;
     margin-bottom: 52px;

@@ -25,22 +25,16 @@
   align-items: flex-start;
 }
 
-.page-header__logo--mobile,
-.page-header__logo--tablet,
-.page-header__logo--desktop {
+.page-header__logo {
   fill: #ffffff;
 }
 
-.page-header__logo-link[href]:hover .page-header__logo--mobile,
-.page-header__logo-link[href]:hover .page-header__logo--tablet,
-.page-header__logo-link[href]:hover .page-header__logo--desktop {
+.page-header__link[href]:hover .page-header__logo {
   fill: #d22856;
 }
 
-.page-header__logo-link[href]:active .page-header__logo--mobile,
-.page-header__logo-link[href]:active .page-header__logo--tablet,
-.page-header__logo-link[href]:active .page-header__logo--desktop {
-  fill: rgba(255, 255, 255, 0.3);
+.page-header__link[href]:active .page-header__logo {
+  opacity: 0.3;
 }
 
 .page-header__logo--tablet,
@@ -52,7 +46,7 @@
   position: relative;
 
   width: 320px;
-  height: 462px;
+  min-height: 462px;
   margin: 0 auto;
   margin-top: -67px;
   margin-bottom: 270px;
@@ -71,7 +65,7 @@
 }
 
 .page-header__intro--inner {
-  height: 237px;
+  min-height: 237px;
   margin-bottom: 0;
 
   display: flex;
@@ -92,6 +86,7 @@
 .page-header__text {
   width: 180px;
   margin: 0;
+  margin-top: 94px;
   margin-bottom: 82px;
   padding: 0;
 
@@ -114,7 +109,7 @@
 
   .page-header__intro {
     width: 660px;
-    height: 729px;
+    min-height: 728px;
     margin-top: -110px;
     margin-bottom: 0;
 
@@ -131,7 +126,7 @@
   }
 
   .page-header__intro--inner {
-    height: 440px;
+    min-height: 440px;
 
     background: #1d2631 url("../img/bg-back-tablet@1x.jpg") no-repeat center -1px;
   }
@@ -145,6 +140,7 @@
 
   .page-header__text {
     width: 360px;
+    margin-top: 180px;
     margin-bottom: 140px;
 
     font-size: 50px;
@@ -184,7 +180,7 @@
 
   .page-header__intro {
     width: 1200px;
-    height: 853px;
+    min-height: 853px;
     margin-top: -110px;
     margin-bottom: 0;
 
@@ -201,7 +197,7 @@
   }
 
   .page-header__intro--inner {
-    height: 394px;
+    min-height: 394px;
 
     background: #1d2631 url("../img/bg-back-desktop@1x.jpg") no-repeat center 1px;
   }
@@ -223,6 +219,7 @@
 
   .page-header__text {
     margin-top: 65px;
+    margin-top: 175px;
     margin-bottom: 100px;
   }
 

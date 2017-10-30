@@ -1,0 +1,55 @@
+.slogan {
+  width: 100%;
+  padding-top: 11px;
+  padding-bottom: 32px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slogan__ask {
+  width: 100%;
+  margin: 0;
+  margin-top: 29px;
+  padding: 0;
+
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .slogan {
+    padding-top: 21px;
+    padding-bottom: 49px;
+  }
+
+  .slogan__ask {
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .slogan__ask:last-child {
+    width: 340px;
+    margin-top: 2px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slogan {
+    padding-top: 40px;
+    padding-bottom: 76px;
+  }
+
+  .slogan__ask {
+    font-size: 50px;
+    line-height: 59px;
+  }
+
+  .slogan__ask:last-child {
+    width: 430px;
+    margin-top: 0;
+  }
+}

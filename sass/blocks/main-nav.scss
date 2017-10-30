@@ -120,6 +120,14 @@
     display: none;
   }
 
+  .main-nav--nojs .main-nav__list {
+    display: block;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
   .main-nav--closed .page-header__box-wrapper {
     height: 66px;
     background-color: rgba(0, 0, 0, 0.3);

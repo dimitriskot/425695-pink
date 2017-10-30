@@ -77,7 +77,7 @@ gulp.task("compress", function (cb) {
   pump([
         gulp.src("js/**.js"),
         uglify(),
-        gulp.dest("build")
+        gulp.dest("build/js")
     ],
     cb
   );

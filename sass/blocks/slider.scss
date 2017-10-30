@@ -61,6 +61,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .slider__box {
+    margin-bottom: 26px;
+  }
+
   .slider__box--plan {
     display: none;
   }

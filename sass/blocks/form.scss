@@ -227,7 +227,7 @@
   margin-bottom: 43px;
 }
 
-.form__box--column:not(:last-child) {
+.form__box-column:not(:last-child) {
   margin-bottom: 43px;
 }
 
@@ -235,7 +235,7 @@
   margin-bottom: 36px;
 }
 
-.form__legend--contacts {
+.form__label--hidden {
   display: none;
 }
 
@@ -277,58 +277,6 @@
 
 .form__footnote-text {
   display: none;
-}
-
-.form__popup {
-  position: absolute;
-  width: 320px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  margin-bottom: 30px;
-
-  background-color: #ffffff;
-  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
-
-  display: none;
-}
-
-.form__popup-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.form__popup-title {
-  width: 280px;
-  margin: 0;
-  margin-top: 43px;
-  margin-bottom: 24px;
-  padding: 0;
-
-  font-size: 18px;
-  line-height: 24px;
-  text-align: center;
-}
-
-.form__popup-text {
-  width: 280px;
-  margin: 0;
-  padding: 0;
-
-  font-size: 14px;
-  line-height: 24px;
-  text-align: center;
-}
-
-.form__popup--succes {
-  top: 1000px;
-
-  background-image: linear-gradient(to bottom, #ffffff 210px, #f2f2f2 210px);
-}
-
-.form__popup--failure {
-  top: 600px;
 }
 
 @media (min-width: $tablet-width) {
@@ -438,7 +386,7 @@
     margin: 0 auto;
   }
 
-  .form__legend--contacts {
+  .form__label--hidden {
     display: block;
   }
 
@@ -478,35 +426,6 @@
     padding-top: 17px;
     padding-left: 20px;
     padding-right: 20px;
-  }
-
-  .form__popup {
-    width: 480px;
-  }
-
-  .form__popup-title {
-    width: 230px;
-    margin-top: 40px;
-    margin-bottom: 29px;
-
-    font-size: 30px;
-    line-height: 40px;
-  }
-
-  .form__popup-text {
-    width: 320px;
-
-    font-size: 18px;
-  }
-
-  .form__popup--succes {
-    top: 1000px;
-
-    background-image: linear-gradient(to bottom, #ffffff 280px, #f2f2f2 280px);
-  }
-
-  .form__popup--failure {
-    top: 600px;
   }
 }
 
@@ -611,40 +530,5 @@
 
   .form__footnote-text {
     display: inline;
-  }
-
-  .form__popup {
-    width: 460px;
-  }
-
-  .form__popup-title {
-    width: 230px;
-    margin-top: 40px;
-    margin-bottom: 29px;
-  }
-
-  .form__popup-text {
-    width: 300px;
-  }
-
-  .form__popup--succes {
-    width: 780px;
-    top: 1000px;
-
-    background-image: linear-gradient(to bottom, #ffffff 230px, #f2f2f2 230px);
-  }
-
-  .form__popup--succes .form__popup-title {
-    width: 405px;
-    margin-top: 45px;
-    margin-bottom: 33px;
-  }
-
-  .form__popup--succes .form__popup-text {
-    width: 390px;
-  }
-
-  .form__popup--failure {
-    top: 600px;
   }
 }
