@@ -84,6 +84,31 @@
   border-color: rgba(40, 54, 69, 0.3);
 }
 
+.button-like {
+  width: 13px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+
+  background-color: transparent;
+
+  border: none;
+
+  cursor: pointer;
+}
+
+.button-tools {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  background-color: transparent;
+
+  border: none;
+}
+
 .button-form {
   width: 280px;
   height: 63px;
@@ -145,6 +170,24 @@
     margin-bottom: 46px;
   }
 
+  .button-tools--crop {
+    margin-top: 9px;
+    margin-left: 1px;
+    margin-bottom: 24px;
+  }
+
+  .button-tools--fill {
+    margin-top: 27px;
+    margin-left: 1px;
+    margin-bottom: 23px;
+  }
+
+  .button-tools--contrast {
+    margin-top: 26px;
+    margin-left: 6px;
+    margin-bottom: 27px;
+  }
+
   .button__post,
   .button__cancel {
     margin: 0;
@@ -178,6 +221,24 @@
     margin-bottom: 68px;
 
     font-size: 21px;
+  }
+
+  .button-tools--crop {
+    margin-top: -2px;
+    margin-left: 0;
+    margin-bottom: 13px;
+  }
+
+  .button-tools--fill {
+    margin-top: 15px;
+    margin-left: 0;
+    margin-bottom: 14px;
+  }
+
+  .button-tools--contrast {
+    margin-top: 18px;
+    margin-left: 6px;
+    margin-bottom: 19px;
   }
 
   .button__post,

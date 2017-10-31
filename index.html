@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <!-- комментарии к замечаниям указаны в конце разметки -->
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
@@ -16,7 +17,7 @@
     <include src="build/img/sprite.svg"></include>
   </div>
   <header class="page-header">
-<!--
+    <!--
 при отключенном js:
   .main-nav--nojs - меню открыто
   .main-nav__toggle - скрыт
@@ -55,7 +56,7 @@
               </svg>
             </a>
             <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">Закрыть меню</span>
+              <span class="visually-hidden">Открыть/Закрыть меню</span>
             </button>
           </div>
         </div>
@@ -64,13 +65,13 @@
             <a class="site-list__link">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html" class="site-list__link">Фотографии</a>
+            <a href="photo.html" class="site-list__link" title="Фотографии">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html" class="site-list__link">Конкурс</a>
+            <a href="form.html" class="site-list__link" title="Конкурс">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive" class="site-list__link" target="_blank">HTML academy</a>
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="site-list__link" target="_blank" title="HTML academy">HTML academy</a>
           </li>
         </ul>
       </div>
@@ -80,7 +81,7 @@
         <div class="wrapper">
           <div class="download__box">
             <h2 class="download__title">Взгляните на жизнь иначе!</h2>
-            <a href="https://www.apple.com/ru/itunes/download/" class="button button__download" target="_blank">Скачать приложение</a>
+            <a href="https://www.apple.com/ru/itunes/download/" class="button button__download" target="_blank" title="Скачать приложение">Скачать приложение</a>
             <div class="download__platform-box">
               <a href="https://www.apple.com/ru/itunes/download/" class="download__platform download__platform--apple" title="Скачать для iOS"
                 target="_blank">
@@ -141,22 +142,22 @@
           <div class="features__image-box">
             <div class="features__image-crop features__image-grey">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
                 <img src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" class="features__image" alt="Mobile">
               </picture>
             </div>
             <div class="features__image-crop features__image-pink">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
                 <img src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" class="features__image" alt="Mobile">
               </picture>
             </div>
             <div class="features__image-crop features__image-smile">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+                <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
                 <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
                 <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" class="features__image" alt="Mobile">
               </picture>
@@ -178,7 +179,7 @@
             <p class="effect__text">
               Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
             </p>
-            <a href="#" class="effect__link">
+            <a href="#" class="effect__link" title="Узнать больше об исследовании">
               Узнать больше об исследовании
             </a>
           </div>
@@ -378,7 +379,7 @@
               Пишите:
               <br>
               <span class="feedback__contacts">
-                <a class="feedback__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                <a class="feedback__link" href="mailto:mail@htmlacademy.ru" title="Написать в HTML Academy">mail@htmlacademy.ru</a>
               </span>
             </p>
             <p class="feedback__text feedback__text--adress">
@@ -423,21 +424,21 @@
         <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--Twitter" href="#">
+              <a class="social__link social__link--Twitter" href="#" title="twitter">
                 <svg class="footer__twitter" width="18" height="15" fill="#d22856">
                   <use xlink:href="#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--Facebook" href="#">
+              <a class="social__link social__link--Facebook" href="#" title="facebook">
                 <svg class="footer__facebook" width="9" height="18" fill="#d22856">
                   <use xlink:href="#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--YouTube" href="#">
+              <a class="social__link social__link--YouTube" href="#" title="youtube">
                 <svg class="footer__youtube" width="15" height="13" fill="#d22856">
                   <use xlink:href="#icon-youtube"></use>
                 </svg>
@@ -449,7 +450,7 @@
           <p class="footer__text">
             Разработано
           </p>
-          <a class="footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <a class="footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="HTML Academy">
             <svg class="footer__academy-icon" width="27" height="34" fill="#d22856">
               <use xlink:href="#icon-htmlacademy"></use>
             </svg>
@@ -493,10 +494,10 @@ ________________________________________
 Стилизация
 Б11. При наполнении контентом (как в макете) элементы каждой версии страницы (мобильной, планшетной и десктопной) соответствуют макету.
 на 960px вместо десктопной версии наблюдается планшетная
-https://monosnap.com/file/ytG63ohgo4tiiN75zVEF7V0FDoX8Yl – проверил на 1200, но декстопняа версия согласно критериям в Пинке должна стартовать от 960
+https://monosnap.com/file/ytG63ohgo4tiiN75zVEF7V0FDoX8Yl – проверил на 960, но декстопняа версия согласно критериям в Пинке должна стартовать от 960
 https://monosnap.com/file/Reb4LdO5gsZEH7iQlbv8jKGIxb3Ort
 https://monosnap.com/file/ry0PSbPg85gxyCD4St4hRNi1FdBC28
-  НЕ ИСПРАВЛЕНО
+  ИСПРАВЛЕНО
 ________________________________________
 Адаптивность
 Б19. Логотип должен адаптироваться.
@@ -531,12 +532,12 @@ _______________________________________
 Доступность
 Д18. Все интерактивные элементы имеют текстовое описание.
 нет
-  НЕ ИСПРАВЛЕНО
+  ИСПРАВЛЕНО (в случае, если какие-то элементы остались пропущенными, напиши, пожалуйста, какие именно =) )
 ________________________________________
 Оптимизация
 Д22. Использован векторный спрайт.
 встроен svg спрайт в html страницу, но он обращаешся в use к внешнему файлу почему то
-вот так <use xlink:href="#icon-htmlacademy"></use>
+вот так <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
 когда надо вот так <use xlink:href="#icon-htmlacademy"></use>
   ИСПРАВЛЕНО
 
